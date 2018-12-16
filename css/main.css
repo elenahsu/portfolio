@@ -1,0 +1,1343 @@
+html {
+    background: #f9f9f9;
+}
+
+
+
+
+
+
+/*--------------NAV--------------*/
+
+.fixed-info {
+    position: fixed;
+    left: 8%;
+}
+
+nav .rectangle {
+    width: 6rem;
+    height: 7rem;
+    background: #f7f7d4;
+    position: absolute;
+    top: 7rem;
+    z-index: 0;
+    margin-left: 2.5rem;
+
+}
+
+
+nav ul {
+    /*    border-left: solid 0.1rem;*/
+    text-transform: lowercase;
+    position: absolute;
+    z-index: 2;
+    padding-top: 2.4rem;
+}
+
+nav li {
+    list-style: none;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    text-align: left;
+    letter-spacing: 0.03rem;
+    padding-left: 3.5rem;
+}
+
+
+nav a:link,
+nav a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+
+    border-bottom: solid 0.1rem;
+
+}
+
+.contact h2 {
+
+    font-family: 'Arapey', serif;
+    font-size: 0.7rem;
+    padding-top: 0.89rem;
+    position: fixed;
+    z-index: 1;
+    letter-spacing: 0.15rem;
+    line-height: 1rem;
+    text-align: left;
+    text-transform: lowercase;
+    top: 30rem;
+    font-weight: 700;
+    margin-left: 1rem;
+
+}
+
+.contact a:link,
+.contact a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.contact a:hover,
+.contact a:focus,
+.contact a:active {
+
+    border-bottom: solid 0.1rem;
+}
+
+/*---------PHOTOGRAPHY-----------*/
+
+.photography ol {
+    list-style-type: decimal-leading-zero;
+    padding-left: 1.2rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.03rem;
+    text-align: left;
+}
+
+.photography li {
+    line-height: 1.3rem;
+    text-align: left;
+    padding-left: 0.5rem;
+    ;
+}
+
+.photography h3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.7rem;
+}
+
+.photography p {
+    font-size: 0.7rem;
+    letter-spacing: 0.03rem;
+    padding-bottom: 0rem;
+
+}
+
+.photography .hero {
+    padding-bottom: 6rem;
+}
+
+.col-three-of-four {
+    padding-bottom: 8rem;
+}
+
+.vertical img {
+    width: 80%;
+}
+
+.photography h3 {
+    color: black;
+}
+
+/*--------------NAME--------------*/
+
+.name h1 {
+    font-family: 'Arapey', serif;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+.name h2 {
+    font-family: 'Arapey', serif;
+    font-size: 0.7rem;
+    padding-top: 0.89rem;
+    position: absolute;
+    z-index: 1;
+    letter-spacing: 0.15rem;
+    line-height: 1rem;
+    text-align: left;
+    text-transform: lowercase;
+    font-weight: 700;
+}
+
+.name h4 {
+    font-family: 'Arapey', serif;
+    font-size: 0.67rem;
+    letter-spacing: 0.3rem;
+    font-style: italic;
+    text-align: center;
+    text-transform: none;
+}
+
+
+.name {
+    line-height: 0.2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.name a:link,
+.name a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.name a:hover,
+.name a:focus,
+.name a:active {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/*--------------MAIN--------------*/
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    /*margin-right: 10%;*/
+}
+
+main {
+    margin-right: 5%;
+}
+
+
+h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h2 a:link,
+h2 a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+h2 a:hover,
+h2 a:focus,
+h2 a:active {
+    color: blue;
+}
+
+h3 {
+    margin: 0rem;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    letter-spacing: 0.1rem;
+    padding-top: 3rem;
+    font-weight: 700;
+    color: blue;
+}
+
+h4 {
+    font-family: 'Arapey', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15rem;
+    line-height: 1rem;
+    text-align: left;
+    text-transform: lowercase;
+    top: 30rem;
+}
+
+
+h5 {
+    font-size: 0.74rem;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+    letter-spacing: 0.035rem;
+    line-height: 1rem;
+    font-weight: 400;
+}
+
+
+p {
+    font-size: 0.9rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.2rem;
+    padding-bottom: 1rem;
+    color: darkslategray;
+}
+
+
+main img {
+    width: 100%;
+}
+
+.desc h3 {
+    padding-bottom: 1rem;
+}
+
+.desc strong {
+    font-weight: 700;
+}
+
+
+p::-moz-selection {
+    color: black;
+    background: yellow;
+}
+
+h1::-moz-selection,
+h2::-moz-selection,
+h3::-moz-selection,
+h4::-moz-selection,
+h5::-moz-selection,
+p::-moz-selection,
+img::-moz-selection,
+a::-moz-selection,
+strong::-moz-selection {
+    color: black;
+    background: #f7f7d4;
+}
+
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+p::selection,
+img::selection,
+a::selection,
+strong::selection {
+    color: black;
+    background: #f7f7d4;
+}
+
+.contain.slide {
+    padding: 1.2rem;
+}
+
+/*------HEADINGS--------*/
+
+.headings {
+    text-align: left;
+    line-height: 1.5rem;
+    padding: 0rem;
+    padding-bottom: 2rem;
+}
+
+.headings h2 {
+    margin: 0rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+
+}
+
+.headings h3 {
+    line-height: 1rem;
+    padding: 0rem;
+    padding-top: 1rem;
+    color: black;
+    font-weight: 400;
+}
+
+
+.headings h4 {
+    padding-left: 0rem;
+    padding-top: 1.8rem;
+    margin-bottom: 0.3rem;
+
+}
+
+.headings img {
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+
+/*------OVERVIEW-------*/
+
+.overview p {
+    text-align: left;
+
+}
+
+.overview {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.thepeak {
+    padding-bottom: 1rem;
+    padding-top: 0rem;
+}
+
+
+.icons {
+    justify-content: center;
+    text-align: center;
+}
+
+.icons img {
+    width: 30%;
+}
+
+.col-same .icons img {
+    width: 10%;
+}
+
+/*
+.photog {
+    width: 10%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+*/
+
+/*-------------POMPOM-------------*/
+
+#animation {
+    transform: scale(0.7);
+}
+
+
+/*--------PROCESS STYLING--------*/
+
+.contain {
+    border: solid 0.01rem black;
+    padding: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    background: white;
+}
+
+.contain h3 {
+    margin: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+
+}
+
+.center {
+    text-align: center;
+}
+
+
+.desc li {
+    list-style: decimal-leading-zero;
+    line-height: 1rem;
+    padding: 1rem;
+    color: darkslategray;
+}
+
+.citations {
+    font-size: 0.07rem;
+    padding-bottom: 0rem;
+}
+
+
+
+iframe {
+    border: 0rem;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/*---------LANDING----------*/
+
+/*
+#landing a:link,
+#landing a:visited {
+    text-decoration: none;
+    color: black;
+
+}
+
+#landing a:hover,
+#landing a:focus,
+#landing a:active {
+    color: blue;
+}
+
+#landing h1 {
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+}
+*/
+
+#landing {
+    padding-top: 8.2rem;
+}
+
+.home h3 {
+    padding: 0rem;
+}
+
+.case {
+    margin-bottom: 3rem;
+}
+
+.case h1 {
+    display: inline;
+    padding-left: 1rem;
+}
+
+.case h2 {
+    display: inline;
+    padding: 0.8rem;
+}
+
+.line {
+    width: 80%;
+    background: black;
+    height: 0.06rem;
+    margin-top: 1.1rem;
+    z-index: 100;
+}
+
+/*
+.sub {
+    font-weight: 400;
+    padding: 0rem;
+    padding-left: 2.3rem;
+    padding-top: 0.5rem;
+}
+*/
+
+.numbers {
+    display: inline;
+    vertical-align: super;
+    padding: 0rem;
+    padding-left: 0rem;
+    color: black;
+}
+
+.cont {
+    margin-left: 1.5rem;
+}
+
+.case h4 {
+    display: inline;
+}
+
+/*
+.case p {
+    margin-left: 2.2rem;
+}
+*/
+
+.case a:link,
+.case a:visited {
+    text-decoration: none;
+    color: black;
+
+}
+
+.case a:hover,
+.case a:focus,
+.case a:active {
+    color: blue;
+}
+
+
+.case a:link h3,
+.case a:visited h3 {
+    text-decoration: none;
+    color: black;
+
+}
+
+.case a:hover h3,
+.case a:focus h3,
+.case a:active h3 {
+    color: blue;
+}
+
+
+/*---------PAGE BUTTONS-------*/
+
+.button {
+    background: none;
+    border: none;
+    padding: 1rem;
+    text-align: center;
+}
+
+.button img {
+    width: 1.4rem;
+
+}
+
+.prev {
+    float: left;
+    text-transform: lowercase;
+}
+
+
+.home {
+    text-transform: lowercase;
+    float: left;
+}
+
+.top {
+    float: right;
+    text-transform: lowercase;
+}
+
+
+.next {
+    float: right;
+    text-transform: lowercase;
+}
+
+
+/*-----------DESIGN IMAGES FOR INDEX--------*/
+
+.designwork img {
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin-bottom: 1rem;
+    z-index: 4;
+}
+
+
+.container img:hover {
+    opacity: 0.2;
+}
+
+.container {
+    color: black;
+    text-align: center;
+}
+
+
+/*------------LINKS-----------*/
+
+.desc a:link,
+.desc a:visited {
+    color: black;
+}
+
+.desc a:hover,
+.desc a:focus,
+.desc a:active {
+    color: blue;
+}
+
+h5 a:link,
+h5 a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+h5 a:hover,
+h5 a:focus,
+h5 a:active {
+    border-bottom: solid 0.1rem;
+    color: black;
+
+}
+
+
+/*------QUALIFICATIONS------*/
+
+.qualifications h3 {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+}
+
+.qualifications {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+}
+
+.qualifications h5 {
+    line-height: 0.9rem;
+}
+
+
+/*-----------STYLE GUIDE---------*/
+
+/*
+
+.styleguide-nav ul {
+        border-left: solid 0.1rem;
+    text-transform: lowercase;
+}
+
+.styleguide-nav li {
+    list-style: none;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    text-align: left;
+    letter-spacing: 0.03rem;
+}
+
+
+.styleguide-nav a:link,
+.styleguide-nav a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.styleguide-nav a:hover,
+.styleguide-nav a:focus,
+.styleguide-nav a:active {
+
+    border-bottom: solid 0.1rem;
+
+}
+
+.styleguide-headings {
+    text-align: left;
+    line-height: 3rem;
+    padding: 0rem;
+
+
+}
+
+.styleguide-headings h2 {
+    margin: 0rem;
+
+}
+
+.styleguide-headings h3 {
+    padding: 0rem;
+    margin: 0rem;
+
+}
+
+.styleguide-headings h4 {
+    padding: 0rem;
+    margin: 0rem;
+
+}
+
+.c1 {
+    background: #f7f7d4;
+}
+
+.c2 {
+    background: #fff;
+}
+
+.c3 {
+    color: white;
+    background: #000;
+
+}
+*/
+
+/*--------SNAPWIDGET-----*/
+
+.snapwidget-widget {
+    border: none;
+    overflow: hidden;
+    width: 100%
+}
+
+/*---------FOOTER---------*/
+
+footer {
+    margin-right: 5%;
+    height: 5rem;
+}
+
+footer h3 {
+    text-align: right;
+    color: black;
+}
+
+footer h3 {
+    padding-top: 1.27rem;
+    text-align: right;
+    padding-bottom: 1rem;
+}
+
+
+footer ul {
+    /*    border-left: solid 0.1rem;*/
+    text-transform: lowercase;
+    position: absolute;
+    text-align: left;
+    padding-left: 0rem;
+
+}
+
+footer li {
+    list-style: none;
+    font-size: 0.7rem;
+    display: inline;
+    padding-right: 2rem;
+    letter-spacing: 0.03rem;
+
+}
+
+
+footer a:link,
+footer a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus,
+footer a:active {
+    color: black;
+    border-bottom: solid 0.1rem;
+
+}
+
+
+
+
+
+/*------------MEDIA QUERIES------*/
+
+@media (min-width: 1064px) {
+
+
+    /*-------INSTAGRAM--------*/
+    #instagram {
+        padding-top: 3rem;
+        padding-right: 10rem;
+        padding-bottom: 6rem;
+        border: solid 0.05rem #f9f9f9;
+    }
+}
+
+@media (min-width:735px) and (max-width:1100px) {
+    .line {
+        width: 85%;
+        background: black;
+        height: 0.06rem;
+        margin-top: 1.1rem;
+        z-index: 100;
+    }
+
+    .case {
+        margin-bottom: 2.5rem;
+    }
+
+    .case h4 {
+        display: block;
+        margin: 0rem;
+        margin-left: 2.5rem;
+    }
+
+    #landing {
+        padding-top: 8.1rem;
+    }
+
+}
+
+
+
+
+@media (min-width: 651px) and (max-width: 734px) {
+
+    .fixed-info {
+        left: 30%;
+        position: fixed;
+    }
+
+    nav .rectangle {
+        width: 80%;
+        height: 80%;
+        background: #f7f7d4;
+        position: absolute;
+        top: 10%;
+        left: 75%;
+        z-index: 0;
+        margin-left: 2rem;
+
+    }
+
+
+    nav ul {
+        /*    border-left: solid 0.1rem;*/
+        text-transform: lowercase;
+        position: absolute;
+        z-index: 2;
+        padding: 0rem;
+        width: 200%;
+        margin: 0rem;
+        text-align: center;
+
+    }
+
+    nav li {
+        list-style: none;
+        line-height: 1.5rem;
+        font-size: 0.8rem;
+        text-align: center;
+        letter-spacing: 0.03rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        display: inline;
+    }
+
+
+    nav a:link,
+    nav a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    nav a:hover,
+    nav a:focus,
+    nav a:active {
+
+        border-bottom: solid 0.1rem;
+
+    }
+
+    .contact h2 {
+        display: none;
+    }
+
+    .contact a:link,
+    .contact a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    .contact a:hover,
+    .contact a:focus,
+    .contact a:active {
+
+        border-bottom: solid 0.1rem;
+    }
+
+
+    /*--------------NAME--------------*/
+    .name h1 {
+        font-family: 'Arapey', serif;
+        text-transform: lowercase;
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        text-align: center;
+    }
+
+    .name h2 {
+        width: 100%;
+        top: 0rem;
+        left: 100%;
+        padding: 0rem;
+        font-family: 'Arapey', serif;
+        font-size: 0.7rem;
+        position: absolute;
+        z-index: 1;
+        letter-spacing: 0.15rem;
+        line-height: 1rem;
+        text-align: left;
+        text-transform: lowercase;
+    }
+
+    .name h4 {
+        font-family: 'Arapey', serif;
+        font-size: 0.67rem;
+        letter-spacing: 0.3rem;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .name {
+        margin: 1rem;
+        padding: 0rem;
+        line-height: 0.2rem;
+        text-align: center;
+    }
+
+    main {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .headings {
+        padding-top: 6rem;
+    }
+
+    header {
+        background: #f9f9f9;
+        width: 100%;
+        height: 7rem;
+        position: fixed;
+        border-bottom: solid 0.01rem lightgray;
+
+    }
+
+}
+
+
+
+
+@media (min-width: 481px) and (max-width: 650px) {
+
+    .line {
+        width: 98%;
+        background: black;
+        height: 0.06rem;
+        margin-top: 1.1rem;
+        z-index: 100;
+    }
+
+    .case {
+        margin-bottom: 2.5rem;
+    }
+
+    .case h1 {
+        font-size: 1.5rem;
+    }
+
+    .case h2 {
+        font-size: 3rem;
+    }
+
+    .case h4 {
+        display: block;
+        margin: 0rem;
+        margin-left: 2.5rem;
+    }
+
+    #landing {
+        padding-top: 12.1rem;
+    }
+
+
+    .fixed-info {
+        left: 25%;
+        position: fixed;
+    }
+
+    nav .rectangle {
+        width: 80%;
+        height: 80%;
+        background: #f7f7d4;
+        position: absolute;
+        top: 10%;
+        left: 75%;
+        z-index: 0;
+        margin-left: 2rem;
+
+    }
+
+
+    nav ul {
+        /*    border-left: solid 0.1rem;*/
+        text-transform: lowercase;
+        position: absolute;
+        z-index: 2;
+        padding: 0rem;
+        width: 200%;
+        margin: 0rem;
+        text-align: center;
+
+    }
+
+    nav li {
+        list-style: none;
+        line-height: 1.5rem;
+        font-size: 0.8rem;
+        text-align: center;
+        letter-spacing: 0.03rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        display: inline;
+    }
+
+
+    nav a:link,
+    nav a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    nav a:hover,
+    nav a:focus,
+    nav a:active {
+
+        border-bottom: solid 0.1rem;
+
+    }
+
+    .contact h2 {
+        display: none;
+    }
+
+    .contact a:link,
+    .contact a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    .contact a:hover,
+    .contact a:focus,
+    .contact a:active {
+
+        border-bottom: solid 0.1rem;
+    }
+
+
+    /*--------------NAME--------------*/
+    .name h1 {
+        font-family: 'Arapey', serif;
+        text-transform: lowercase;
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        text-align: center;
+    }
+
+    .name h2 {
+        width: 100%;
+        top: 0rem;
+        left: 100%;
+        padding: 0rem;
+        font-family: 'Arapey', serif;
+        font-size: 0.7rem;
+        position: absolute;
+        z-index: 1;
+        letter-spacing: 0.15rem;
+        line-height: 1rem;
+        text-align: left;
+        text-transform: lowercase;
+    }
+
+    .name h4 {
+        font-family: 'Arapey', serif;
+        font-size: 0.67rem;
+        letter-spacing: 0.3rem;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .name {
+        margin: 1rem;
+        padding: 0rem;
+        line-height: 0.2rem;
+        text-align: center;
+    }
+
+    main {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .headings {
+        padding-top: 4rem;
+    }
+
+    header {
+        background: #f9f9f9;
+        width: 100%;
+        height: 7rem;
+        position: fixed;
+        border-bottom: solid 0.01rem lightgray;
+
+    }
+
+    .contain {
+        padding: 2rem;
+    }
+
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .line {
+        width: 98%;
+        background: black;
+        height: 0.06rem;
+        margin-top: 1.1rem;
+        z-index: 100;
+    }
+
+    .case {
+        margin-bottom: 2.5rem;
+    }
+
+    .case h1 {
+        font-size: 1rem;
+    }
+
+    .case h2 {
+        font-size: 2.5rem;
+        padding: 0.5rem;
+    }
+
+    .case h4 {
+        display: block;
+        margin: 0rem;
+        margin-left: 2.5rem;
+    }
+
+    #landing {
+        padding-top: 12.1rem;
+    }
+
+
+    .photography .col-one-of-four {
+        display: none;
+    }
+
+    .col-three-of-four {
+        width: 100%;
+        padding: 0rem;
+        margin: 0rem;
+    }
+
+
+    .fixed-info {
+        left: 15%;
+        position: fixed;
+    }
+
+    nav .rectangle {
+        width: 80%;
+        height: 80%;
+        background: #f7f7d4;
+        position: absolute;
+        top: 10%;
+        left: 75%;
+        z-index: 0;
+        margin-left: 2rem;
+
+    }
+
+
+    nav ul {
+        /*    border-left: solid 0.1rem;*/
+        text-transform: lowercase;
+        z-index: 2;
+        margin: 0rem;
+        text-align: center;
+        width: 160%;
+        padding: 0rem;
+
+    }
+
+    nav li {
+        list-style: none;
+        line-height: 1.5rem;
+        font-size: 0.8rem;
+        text-align: center;
+        letter-spacing: 0.03rem;
+        display: inline;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+
+    nav a:link,
+    nav a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    nav a:hover,
+    nav a:focus,
+    nav a:active {
+
+        border-bottom: rem;
+
+    }
+
+    .contact h2 {
+        display: none;
+    }
+
+    .contact a:link,
+    .contact a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    .contact a:hover,
+    .contact a:focus,
+    .contact a:active {
+
+        border-bottom: solid 0.1rem;
+    }
+
+    /*--------------NAME--------------*/
+    .name h1 {
+        font-family: 'Arapey', serif;
+        text-transform: lowercase;
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        text-align: center;
+    }
+
+
+    .name h2 {
+        width: 100%;
+        top: 0rem;
+        left: 100%;
+        padding: 0rem;
+        font-family: 'Arapey', serif;
+        font-size: 0.7rem;
+        position: absolute;
+        z-index: 1;
+        letter-spacing: 0.15rem;
+        line-height: 1rem;
+        text-align: left;
+        text-transform: lowercase;
+    }
+
+    .name h4 {
+        font-family: 'Arapey', serif;
+        font-size: 0.67rem;
+        letter-spacing: 0.3rem;
+        font-style: italic;
+        text-align: center;
+    }
+
+
+    .name {
+        margin: 1rem;
+        padding: 0rem;
+        line-height: 0.2rem;
+        text-align: center;
+    }
+
+    main {
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+
+    .headings {
+        padding-top: 4rem;
+    }
+
+
+    header {
+        background: #f9f9f9;
+        width: 100%;
+        height: 7rem;
+        position: fixed;
+        border-bottom: solid 0.01rem lightgray;
+
+    }
+
+    .contain {
+        border: solid 0.01rem black;
+        padding: 1.3rem;
+        margin: 0rem;
+    }
+
+    footer ul {
+        padding: 0rem;
+    }
+
+    footer li {
+        padding: 0.5rem;
+    }
+
+    .slide {
+        margin-top: 2rem;
+    }
+
+
+}

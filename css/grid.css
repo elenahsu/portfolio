@@ -1,0 +1,117 @@
+/*--------------1 COLUMN GRID--------------*/
+
+.flex-grid-one {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-grid-one .col {
+    width: 70%;
+}
+
+
+/*--------------2 COLUMN GRID--------------*/
+
+.flex-grid-two {
+    display: flex;
+    align-content: center;
+}
+
+.flex-grid-two .col-same {
+    width: 40%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.flex-grid-two .col-one {
+    width: 30%;
+
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.flex-grid-two .col-two {
+    width: 60%;
+
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    text-align: left;
+
+}
+
+.flex-grid-two .col-one-of-four {
+    width: 20%;
+}
+
+.flex-grid-two .col-three-of-four {
+    width: 80%;
+}
+
+/*--------------3 COLUMN GRID--------------*/
+
+.flex-grid-three {
+    display: flex;
+}
+
+.flex-grid-three .col {
+    width: 30%;
+    flex-wrap: wrap;
+
+}
+
+/*--------------4 COLUMN GRID--------------*/
+
+.flex-grid-four {
+    display: flex;
+}
+
+.flex-grid-four .col {
+    width: 20%;
+    flex-wrap: wrap;
+}
+
+
+/*-----------FLEX BOX FOR STYLE GUIDE------------*/
+
+#flex-box-one {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#flex-box-one .box {
+    width: 90%;
+    height: 3rem;
+    flex-wrap: wrap;
+    border: solid 0.01rem black
+}
+
+#flex-box-two {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#flex-box-two .box {
+    width: 45%;
+    height: 3rem;
+    flex-wrap: wrap;
+    border: solid 0.01rem black
+}
+
+.flex-box-three {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.flex-box-three .box {
+    width: 30%;
+    height: 3rem;
+    flex-wrap: wrap;
+    border: solid 0.01rem black
+}
