@@ -515,6 +515,10 @@ strong::selection {
     margin-bottom: 0rem;
 }
 
+.other p {
+    margin-top: 1rem;
+}
+
 .thepeak {
     padding-bottom: 1rem;
     padding-top: 0rem;

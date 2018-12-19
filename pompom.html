@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elena Hsu</title>
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/grid.css" type="text/css">
     <link rel="stylesheet" href="css/flexbox.css" type="text/css">
-    <link rel="stylesheet" href="css/normalize.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Arapey:400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
 
     <!--FAVICON-->
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
@@ -29,7 +31,16 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#0000ff">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#0000ff">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0000ff">
+
+
 </head>
 
 <body>
@@ -51,17 +62,19 @@
                         <a href="index.html">
                             <h1>Elena Hsu</h1>
                             <h4>[a-LE-na/su]</h4>
-                            <h2>ux + visual<br> designer
-                            </h2>
+
                         </a>
                     </div>
                     <nav>
                         <div class="rectangle">
+                            <h2>ux + visual<br> designer
+                            </h2>
                         </div>
                         <ul>
                             <li><a href="index.html">Designs</a></li>
+                            <li><a href="photography.html">Photography</a></li>
                             <li><a href="about.html">About Me</a></li>
-                            <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                            <li><a href="http://www.sfu.ca/~hsuyuh/resume.pdf" target="_blank">Resume</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -75,40 +88,36 @@
                     <div class="headings">
                         <h4>TEI Design @malmö University</h4>
                         <h2>Pompom</h2>
+                    </div>
 
-                        <div class="flex-grid-two">
-                            <div class="col-one">
-                                <img src="img/pompom/oceanoctave.gif" alt="GIF Space Sine Board of Pompom with an animated rocket ship">
-                                <img src="img/pompom/spacesine.gif" alt="GIF Space Sine Board of Pompom with an animated rocket ship">
-                            </div>
-                            <div class="col-two">
-                                <img src="img/pompom/interaction.gif" alt="GIF of pompom physical interaction">
-                            </div>
+                    <div class="flex-grid-two-project">
+                        <div class="col-one">
+                            <img src="img/pompom/oceanoctave.gif" alt="GIF Space Sine Board of Pompom with an animated rocket ship">
+                            <img src="img/pompom/spacesine.gif" alt="GIF Space Sine Board of Pompom with an animated rocket ship">
+                        </div>
+                        <div class="col-two">
+                            <img src="img/pompom/interaction.gif" alt="GIF of pompom physical interaction">
+                        </div>
+
+
+
+
+                        <div class="overview">
+                            <p>PomPom is an interactive system designed to aid children ages five to eight in musical and visual expression; the intent was to explore new opportunities and integrate TEI within educational tools to enhance the role of music in early children development.</p>
+                            <hr>
+
                         </div>
                     </div>
 
-
-                    <div class="flex-grid-one">
-                        <div class="col">
-                            <div class="overview">
-                                <p>PomPom is an interactive system designed to aid children ages five to eight in musical and visual expression; the intent was to explore new opportunities and integrate TEI within educational tools to enhance the role of music in early children development.</p>
-                                <hr>
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
                     <div class="flex-grid-one">
                         <div class="col">
                             <div class="flex-grid-three">
 
                                 <div class="col">
                                     <h3>Team</h3>
-                                    <h5><a href="https://nathaliestrindlund.com/" target="_blank">Nathalie Strindlund</a></h5>
-                                    <h5><a href="https://adamterne.com/" target="_blank">Adam Terne</a></h5>
-                                    <h5><a href="mailto:elias.widqvist@gmail.com">Elias Widqvist</a></h5>
+                                    <h5>Nathalie Strindlund</h5>
+                                    <h5>Adam Terne</h5>
+                                    <h5>Elias Widqvist</h5>
 
                                 </div>
 
@@ -117,6 +126,7 @@
                                     <h3>My Roles</h3>
                                     <h5>Experience Design</h5>
                                     <h5>Visual Design</h5>
+                                    <h5>Interaction Design</h5>
                                     <h5>User Research</h5>
                                 </div>
                                 <div class="col">
@@ -139,14 +149,6 @@
                                     <h5>For this tangible and embodied interaction course, the objective was to analyze existing educational tools and suggest new tangible and embodied interactions to incorporate into embodied learning.</h5>
                                 </div>
                             </div>
-
-
-
-                            <div class="flex-grid-one">
-                                <div class="col">
-                                    <p>I took this course during my exchange semester. What was unique about this project was that I got to experience different approaches and methods in interaction design while immersing myself in Swedish culture. Malmö University has given me the opportunity to freely explore and build on my foundation at my home university while offering a different perspective. My exchange semester has given me the opportunity to reflect on the connections I make around me and the impact of good design on different communities.</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -154,20 +156,35 @@
 
                         <div class="flex-grid-one">
                             <div class="col">
-                                <div class="contain center">
-                                    <h3>Vision</h3>
-                                    <div class="flex-grid-two">
-                                        <div class="col-same">
+                                <div class="contain">
+                                    <h3>Exchange Abroad @ Malmö University</h3>
+
+                                    <p>I took this course during my exchange semester. What was unique about this project was that I got to experience different approaches and methods in interaction design while immersing myself in Swedish culture. Malmö University has given me the opportunity to freely explore and build on my foundation at my home university while offering a different perspective. My exchange semester has given me the opportunity to reflect on the connections I make around me and the impact of good design on different communities.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="flex-grid-one">
+                            <div class="col">
+                                <div class="contain">
+
+                                    <h3 class="center">Vision</h3>
+                                    <div class="flex-grid-two-project">
+                                        <div class="col-same content">
                                             <div class="icons">
                                                 <img src="img/pompom/interfaceicon.png" alt="Screen Icon">
-                                                <h5>On-Screen Interface</h5>
+                                                <h3>On-Screen Interface</h3>
                                             </div>
                                         </div>
-                                        <div class="col-same">
+                                        <div class="col-same content">
                                             <div class="icons">
 
                                                 <img src="img/pompom/ppicon.png" alt="Physical Artifact Icon of pompom controller">
-                                                <h5>Physical Artifact</h5>
+                                                <h3>Physical Artifact</h3>
                                             </div>
 
 
@@ -186,24 +203,25 @@
                                 <div class="contain">
                                     <h3>Opportunity</h3>
                                     <div class="flex-grid-three">
-                                        <div class="col">
+
+                                        <div class="col content">
                                             <div class="icons">
                                                 <img src="img/pompom/caricon.jpg" alt="icon of a car">
-                                                <h5>Music as a Vehicle</h5>
+                                                <h3>Music as a Vehicle</h3>
                                             </div>
                                         </div>
 
-                                        <div class="col">
+                                        <div class="col content">
                                             <div class="icons">
                                                 <img src="img/pompom/eyeicon.png" alt="icon of an eye">
-                                                <h5>Secondary Focus Learning</h5>
+                                                <h3>Secondary Focus Learning</h3>
                                             </div>
                                         </div>
 
-                                        <div class="col">
+                                        <div class="col content">
                                             <div class="icons">
                                                 <img src="img/pompom/handicon.jpg" alt="icon of a hand">
-                                                <h5>TUI for creative Expression</h5>
+                                                <h3>TUI for creative Expression</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -213,6 +231,7 @@
                                     <p>Much learning occurs without conscious awareness, suggesting that the user's secondary focus can be elsewhere while simultaneously interacting with music.</p>
 
                                     <p>There is also alot of supporting evidence that tangible user interfaces can empower artsits, boost their creative expression, and enhance performing art.</p>
+
                                 </div>
                             </div>
                         </div>
@@ -221,48 +240,52 @@
                             <div class="col">
                                 <div class="contain">
                                     <h3>Insights</h3>
-
-                                    <h5>Music as a Vehicle</h5>
-
-                                    <p>“Music can also improve listening and oral language skill development, improve attention and memory, and enhance abstract thinking.”</p>
-
-
-                                    <p>“Music can transform classrooms into positive learning environments where children thrive academically, socially, and emotionally.”</p>
-
-                                    <p>“It explores the evidence relating to the impact of musical skills on language development, literacy, numeracy, measures of intelligence, general attainment, creativity, fine motor co-ordination, concentration, self-confidence, emotional sensitivity, social skills, team work, self-discipline, and relaxation."
-                                    </p>
-
-                                    <h5>Secondary Focus Learning</h5>
-                                    <p>“When asked how they learned and remembered the words so quickly, one very musically talented person replied, ‘Easy, put anything to music and I can remember it.’”</p>
-                                    <p>“Extensive active engagement with music can induce cortical reorganization. This may produce functional changes in how the brain processes information.”
-                                    </p>
-
-                                    <h5>Tangible User Interfaces for Creative Expression</h5>
-
-                                    <p>“Tangible user interfaces empower artists, boost their creative expression and enhance performing art.”</p>
-
-                                    <p>“They are more explorative, collaborative and expressive compared to traditional graphical interfaces [30].”</p>
-                                    <hr>
-
-                                    <p class="citations">Leinonen, L. and Xhemajli, A. (2008). The musical development of children 0-10 years old and the educators approach to this development. Bachelor Degree Paper. Malmö University.</p>
-
-                                    <p class="citations">Hill-Clark, K. and Robinson, N. (2004). It's as Easy as A-B-C and Do-Re-Mi: Music, Rhythm, and Rhyme Enhance Children's Literacy Skills. YC Young Children, 5(59), pp.91-96.</p>
-
-                                    <p class="citations">Hallam, S. (2010). The power of music: Its impact on the intellectual, social and personal development of children and young people. International Journal of Music Education, 28(3), pp.269-289.</p>
-
-                                    <p class="citations">Kountouras, S. and Zannos, I. (2017). Gestus: Teaching Soundscape Composition and Performance with a Tangible Interface. In: NIME'17. Copenhagen: Aalborg University Denmark, pp.336-341.</p>
+                                    <div class="content">
 
 
 
+                                        <h3>Music as a Vehicle</h3>
+
+                                        <p>“Music can also improve listening and oral language skill development, improve attention and memory, and enhance abstract thinking.”</p>
+
+
+                                        <p>“Music can transform classrooms into positive learning environments where children thrive academically, socially, and emotionally.”</p>
+
+                                        <p>“It explores the evidence relating to the impact of musical skills on language development, literacy, numeracy, measures of intelligence, general attainment, creativity, fine motor co-ordination, concentration, self-confidence, emotional sensitivity, social skills, team work, self-discipline, and relaxation."
+                                        </p>
+
+                                        <h3>Secondary Focus Learning</h3>
+                                        <p>“When asked how they learned and remembered the words so quickly, one very musically talented person replied, ‘Easy, put anything to music and I can remember it.’”</p>
+                                        <p>“Extensive active engagement with music can induce cortical reorganization. This may produce functional changes in how the brain processes information.”
+                                        </p>
+
+                                        <h3>Tangible User Interfaces for Creative Expression</h3>
+
+                                        <p>“Tangible user interfaces empower artists, boost their creative expression and enhance performing art.”</p>
+
+                                        <p>“They are more explorative, collaborative and expressive compared to traditional graphical interfaces [30].”</p>
+                                        <hr>
+
+                                        <p class="citations">Leinonen, L. and Xhemajli, A. (2008). The musical development of children 0-10 years old and the educators approach to this development. Bachelor Degree Paper. Malmö University.</p>
+
+                                        <p class="citations">Hill-Clark, K. and Robinson, N. (2004). It's as Easy as A-B-C and Do-Re-Mi: Music, Rhythm, and Rhyme Enhance Children's Literacy Skills. YC Young Children, 5(59), pp.91-96.</p>
+
+                                        <p class="citations">Hallam, S. (2010). The power of music: Its impact on the intellectual, social and personal development of children and young people. International Journal of Music Education, 28(3), pp.269-289.</p>
+
+                                        <p class="citations">Kountouras, S. and Zannos, I. (2017). Gestus: Teaching Soundscape Composition and Performance with a Tangible Interface. In: NIME'17. Copenhagen: Aalborg University Denmark, pp.336-341.</p>
+
+
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
 
-
                         <div class="flex-grid-one">
                             <div class="col">
-                                <div class="contain center">
+                                <div class="contain">
+
                                     <h3>Challenges</h3>
                                     <ul>
                                         <li>Using tangible and embodied interactions in education</li>
@@ -274,85 +297,103 @@
                         </div>
 
 
+
+
+
+
                         <div class="flex-grid-one">
                             <div class="col">
                                 <div class="contain">
+
                                     <h3>User Experience</h3>
+
                                     <p>The animations play from and on the computer in <strong>real-time</strong> with <strong>sounds</strong> allowing children the freedom of prolonged tones and tempos with <strong>syncing animations</strong>. The user is free to explore and press on the controller to create their own <strong>audiovisual artwork</strong>.
-                                        <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe src="https://streamable.com/s/cicgv/msofhk" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+                                        <div class="flex-grid-two-project">
+                                            <div class="col-one">
+                                                <div style="width:100%;height:0px;position:relative;padding-bottom:128.905%;"><iframe src="https://streamable.com/s/0csjt/yxsorf" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
 
-                                </div>
-                            </div>
-                            <div class="flex-grid-one">
-                                <div class="col">
-                                    <div class="contain">
-                                        <h3>Physical Artifact</h3>
-                                        <div class="flex-grid-two">
-                                            <div class="col-same">
-                                                <img src="img/pompom/physical.gif" alt="GIF Physical Artifact of the Pompom">
                                             </div>
-                                            <div class="col-same">
-                                                <p>The physical artifact was designed so that it invites interactions from any direction encouraging cooperation between several children. Using Dreyfuss' ergonomic design factors, the triangular shape of the controller and the cushion curves call for the action of pressing. </p>
+                                            <div class="col-two">
+                                                <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe src="https://streamable.com/s/w1b8i/iwccdz" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe> </div>
+
                                             </div>
                                         </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-grid-one">
+                            <div class="col">
+                                <div class="contain">
+
+                                    <h3>Physical Artifact</h3>
+                                    <div class="flex-grid-two">
+                                        <div class="col-same">
+                                            <img src="img/pompom/physical.gif" alt="GIF Physical Artifact of the Pompom">
+                                        </div>
+                                        <div class="col-same">
+                                            <p>The physical artifact was designed so that it invites interactions from any direction encouraging cooperation between several children. Using Dreyfuss' ergonomic design factors, the triangular shape of the controller and the cushion curves call for the action of pressing. </p>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
 
-                            <div class="flex-grid-one">
 
-                                <div class="col">
-                                    <div class="contain">
-                                        <h3>On-Screen Interface</h3>
-                                        <div class="flex-grid-two">
-                                            <div class="col-same">
-                                                <img src="img/pompom/seashellsine.gif" alt="GIF Ocean Octave first iteration">
-                                            </div>
-                                            <div class="col-same">
-                                                <img src="img/pompom/desertdrum.gif" alt="GIF Desert Drum first iteration">
-                                            </div>
+                        <div class="flex-grid-one">
+
+                            <div class="col">
+                                <div class="contain">
+                                    <h3>On-Screen Interface</h3>
+                                    <div class="flex-grid-two">
+                                        <div class="col-same">
+                                            <img src="img/pompom/seashellsine.gif" alt="GIF Ocean Octave first iteration">
                                         </div>
-                                        <p>The Seashell Sine's audiovisual mimics piano key frequencies because classical music notes are proven especially easy for children to adapt to.</p>
-                                        <div class="flex-grid-one">
-                                            <img src="img/pompom/screen.png" alt="Abstract animation ideation for the first iteration" id="animation">
-                                            <p>The on-screen interface started out with abstract animations created on Adobe Illustrator to let children have the freedom to explore different shapes and styles.</p>
-
+                                        <div class="col-same">
+                                            <img src="img/pompom/desertdrum.gif" alt="GIF Desert Drum first iteration">
                                         </div>
+                                    </div>
+                                    <p>The Seashell Sine's audiovisual mimics piano key frequencies because classical music notes are proven especially easy for children to adapt to.</p>
+                                    <div class="flex-grid-one">
+                                        <img src="img/pompom/screen.png" alt="Abstract animation ideation for the first iteration" id="animation">
+                                        <p>The on-screen interface started out with abstract animations created on Adobe Illustrator to let children have the freedom to explore different shapes and styles.</p>
+
                                     </div>
 
                                 </div>
                             </div>
+                        </div>
 
 
-                            <div class="flex-grid-one">
-                                <div class="col">
-                                    <div class="contain">
+                        <div class="flex-grid-one">
+                            <div class="col">
+                                <div class="contain">
 
-                                        <h3>User Testing</h3>
+                                    <h3>User Testing</h3>
 
-                                        <p>The user testing was conducted individually and collaboratively on two participants ages five and eight for 20 minutes through observations and interviews.</p>
-                                        <p>The participants had a need to physically relate to the boards and suggested landscapes with fishes and oceans instead. Heavily influenced by this, the <strong>design iterations following the user testing was changed to include environmental elements</strong>.</p>
+                                    <p>The user testing was conducted individually and collaboratively on two participants ages five and eight for 20 minutes through observations and interviews.</p>
+                                    <p>The participants had a need to physically relate to the boards and suggested landscapes with fishes and oceans instead. Heavily influenced by this, the <strong>design iterations following the user testing was changed to include environmental elements</strong>.</p>
 
-                                        <div class="flex-grid-two">
+                                    <div class="flex-grid-two">
 
-                                            <div class="col-same">
-                                                <img src="img/pompom/oceanoctave.gif" alt="GIF Space Sine Board of Pompom with an animated rocket ship">
+                                        <div class="col-same">
+                                            <img src="img/pompom/oceanoctave.gif" alt="GIF Space Sine Board of Pompom with an animated rocket ship">
 
 
-                                            </div>
-                                            <div class="col-same">
-                                                <img src="img/pompom/spacesine.gif" alt="GIF Space Sine Board of Pompom with an animated rocket ship">
-
-                                            </div>
                                         </div>
+                                        <div class="col-same">
+                                            <img src="img/pompom/spacesine.gif" alt="GIF Space Sine Board of Pompom with an animated rocket ship">
 
-                                        <h5>The participants' names and faces are not mentioned and are censored due to underage policies.</h5>
-
-
-
-
+                                        </div>
                                     </div>
+
+                                    <h5>The participants' names and faces are censored due to underage legal policies in Sweden.</h5>
+
+
+
+
+
                                 </div>
                             </div>
                         </div>
@@ -381,14 +422,15 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                     <!--page buttons-->
 
                     <div class="button prev">
-                        <a href="vancity.html">
+                        <a href="dogfives.html">
                         <img src="img/lefticon.svg" alt="left arrow icon"></a>
-                        <h5><a href="vancity.html">Prev</a></h5>
+                        <h5><a href="dogfives.html">Prev</a></h5>
                     </div>
                     <div class="button home">
                         <a href="index.html"><img src="img/homeicon.png" alt="home icon"></a>
