@@ -184,7 +184,7 @@ nav a:active {
     height: 100%;
     background: #f9f9f9;
     display: none;
-    z-index: 999;
+    z-index: 9;
 }
 
 #hamburger ul {
@@ -198,7 +198,7 @@ nav a:active {
 
 #hamburger li {
     list-style: none;
-    line-height: 2rem;
+    line-height: 2.5rem;
     font-size: 0.8rem;
     text-align: center;
     letter-spacing: 0.03rem;
@@ -227,13 +227,14 @@ nav a.active {
 .close-hamburger,
 .open-hamburger {
     position: fixed;
-    top: 20px;
+    top: 25px;
     right: 20px;
     cursor: pointer;
 }
 
 .open-hamburger {
     display: none;
+    z-index: 9;
 }
 
 .open-hamburger img,
@@ -1528,6 +1529,7 @@ footer a:active {
         text-align: center;
         margin: 0.3rem;
         margin-top: 1.5rem;
+        z-index: 99;
     }
 
 
@@ -1535,6 +1537,7 @@ footer a:active {
         width: 100%;
         margin: 0rem;
         font-size: 0.5rem;
+        z-index: 99;
 
 
     }
@@ -1545,6 +1548,7 @@ footer a:active {
         letter-spacing: 0.25rem;
         font-style: italic;
         text-align: center;
+        z-index: 99;
     }
 
 
@@ -1571,6 +1575,7 @@ footer a:active {
         height: 4.5rem;
         position: fixed;
         border-bottom: solid 0.01rem lightgray;
+        z-index: 9;
 
 
     }
