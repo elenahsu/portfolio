@@ -2,16 +2,102 @@ html {
     background: #f9f9f9;
 }
 
+body.index {
+    overflow: hidden;
+}
+
+/*--------------SPLASH----------*/
+
+#splash {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    background: white;
+    z-index: 99;
+}
 
 
+#splash h2 {
+    position: absolute;
+    padding: 0rem;
+    top: 33%;
+    left: 13%;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    font-size: 1.8rem;
 
+}
 
+#splash h3 {
+    padding: 0rem;
+    margin-top: 1rem;
+    position: absolute;
+    top: 39%;
+    left: 13%;
+    color: black;
+    font-weight: 400;
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+}
+
+#splash h4 {
+    position: absolute;
+    top: 31%;
+    left: 13%;
+    font-size: 0.8rem;
+}
+
+/*
+
+#splash h1 {
+    position: absolute;
+    top: 23%;
+    left: 5%;
+}
+*/
+
+#splash img:nth-child(1) {
+    width: 32%;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    display: none;
+
+}
+
+#splash img:nth-child(2) {
+    width: 32%;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    display: none;
+
+}
+
+#splash img:nth-child(3) {
+    width: 30%;
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    display: none;
+}
+
+#splash img:nth-child(4) {
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    display: none;
+}
 
 /*--------------NAV--------------*/
 
 .fixed-info {
     position: fixed;
     left: 8%;
+    z-index: 9;
 }
 
 nav .rectangle {
@@ -88,6 +174,74 @@ nav a:active {
     border-bottom: solid 0.1rem;
 }
 
+/*-------HAMBURGER-------*/
+
+#hamburger {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    height: 100%;
+    background: #f9f9f9;
+    display: none;
+    z-index: 999;
+}
+
+#hamburger ul {
+    text-transform: lowercase;
+    position: absolute;
+    padding-left: 0rem;
+    margin-top: 5rem;
+    width: 100%;
+
+}
+
+#hamburger li {
+    list-style: none;
+    line-height: 2rem;
+    font-size: 0.8rem;
+    text-align: center;
+    letter-spacing: 0.03rem;
+    margin-left: 0rem;
+
+}
+
+#hamburger a:link,
+#hamburger a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#hamburger a:hover,
+#hamburger a:focus,
+#hamburger a:active {
+    border-bottom: solid 0.1rem;
+}
+
+#hamburger a.active,
+nav a.active {
+    border-bottom: solid 0.1rem;
+}
+
+
+.close-hamburger,
+.open-hamburger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.open-hamburger {
+    display: none;
+}
+
+.open-hamburger img,
+.close-hamburger img {
+    width: 20px;
+}
+
+
 /*---------PHOTOGRAPHY-----------*/
 
 .photography ol {
@@ -144,11 +298,13 @@ nav a:active {
     text-align: center;
 }
 
-.name h2 {
+.rectangle h2 {
     font-family: 'Arapey', serif;
     font-size: 0.7rem;
-    padding-top: 0.89rem;
+    top: 0rem;
     position: absolute;
+    left: -8px;
+
     z-index: 1;
     letter-spacing: 0.15rem;
     line-height: 1rem;
@@ -315,7 +471,7 @@ strong::selection {
     text-align: left;
     line-height: 1.5rem;
     padding: 0rem;
-    padding-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .headings h2 {
@@ -328,7 +484,7 @@ strong::selection {
 .headings h3 {
     line-height: 1rem;
     padding: 0rem;
-    padding-top: 1rem;
+    margin-top: 1rem;
     color: black;
     font-weight: 400;
 }
@@ -336,14 +492,13 @@ strong::selection {
 
 .headings h4 {
     padding-left: 0rem;
-    padding-top: 1.8rem;
+    margin-top: 2.5rem;
     margin-bottom: 0.3rem;
 
 }
 
 .headings img {
     margin-top: 1rem;
-    padding-top: 1rem;
 }
 
 
@@ -355,8 +510,8 @@ strong::selection {
 }
 
 .overview {
-    padding-top: 1rem;
-    padding-bottom: 1.5rem;
+    margin-top: 3.5rem;
+    margin-bottom: 0rem;
 }
 
 .thepeak {
@@ -399,17 +554,65 @@ strong::selection {
 .contain {
     border: solid 0.01rem black;
     padding: 3rem;
-    margin-top: 3rem;
-    margin-bottom: 5rem;
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
     background: white;
 }
 
 .contain h3 {
     margin: 0rem;
-    padding-top: 0rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    line-height: 1rem;
 
 }
+
+.contain img {
+    padding-bottom: 1rem;
+}
+
+.contain p {
+    margin-top: 0rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    padding-bottom: 0rem;
+}
+
+.contain strong {
+    font-weight: 400;
+    color: blue;
+}
+
+.contain h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+
+
+
+.content h3 {
+    color: black;
+    padding: 0rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+}
+
+.content h5 {
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+}
+
+.cont h3 {
+    margin-top: 60%;
+}
+
+.screens {
+    margin-top: 1.5rem;
+}
+
 
 .center {
     text-align: center;
@@ -428,13 +631,18 @@ strong::selection {
     padding-bottom: 0rem;
 }
 
+.quotations {
+    color: ;
+}
+
 
 
 iframe {
     border: 0rem;
     width: 100%;
     height: 100%;
-
+    margin-top: 0rem;
+    z-index: 0;
 }
 
 
@@ -467,12 +675,18 @@ iframe {
     padding-top: 8.2rem;
 }
 
+.home h4 {
+    padding: 0rem;
+    margin-bottom: 0rem;
+}
+
 .home h3 {
+    margin-top: 0.5rem;
     padding: 0rem;
 }
 
 .case {
-    margin-bottom: 3rem;
+    margin-bottom: 2.95rem;
 }
 
 .case h1 {
@@ -488,7 +702,7 @@ iframe {
 .line {
     width: 80%;
     background: black;
-    height: 0.06rem;
+    height: 0.065rem;
     margin-top: 1.1rem;
     z-index: 100;
 }
@@ -797,7 +1011,6 @@ footer a:active {
 
 @media (min-width: 1064px) {
 
-
     /*-------INSTAGRAM--------*/
     #instagram {
         padding-top: 3rem;
@@ -808,6 +1021,8 @@ footer a:active {
 }
 
 @media (min-width:735px) and (max-width:1100px) {
+
+
     .line {
         width: 85%;
         background: black;
@@ -835,146 +1050,22 @@ footer a:active {
 
 
 
-@media (min-width: 651px) and (max-width: 734px) {
+@media (min-width: 656px) and (max-width: 734px) {
 
-    .fixed-info {
-        left: 30%;
-        position: fixed;
-    }
-
-    nav .rectangle {
-        width: 80%;
-        height: 80%;
-        background: #f7f7d4;
-        position: absolute;
-        top: 10%;
-        left: 75%;
-        z-index: 0;
-        margin-left: 2rem;
-
+    .cont h3 {
+        margin-top: 0;
+        padding-top: 0;
     }
 
 
-    nav ul {
-        /*    border-left: solid 0.1rem;*/
-        text-transform: lowercase;
-        position: absolute;
-        z-index: 2;
-        padding: 0rem;
-        width: 200%;
-        margin: 0rem;
-        text-align: center;
-
-    }
-
-    nav li {
-        list-style: none;
-        line-height: 1.5rem;
-        font-size: 0.8rem;
-        text-align: center;
-        letter-spacing: 0.03rem;
-        padding-left: 1.2rem;
-        padding-right: 1.2rem;
-        display: inline;
+    #content .headings {
+        margin-top: 5rem;
     }
 
 
-    nav a:link,
-    nav a:visited {
-        color: black;
-        text-decoration: none;
+    .open-hamburger {
+        display: block;
     }
-
-    nav a:hover,
-    nav a:focus,
-    nav a:active {
-
-        border-bottom: solid 0.1rem;
-
-    }
-
-    .contact h2 {
-        display: none;
-    }
-
-    .contact a:link,
-    .contact a:visited {
-        color: black;
-        text-decoration: none;
-    }
-
-    .contact a:hover,
-    .contact a:focus,
-    .contact a:active {
-
-        border-bottom: solid 0.1rem;
-    }
-
-
-    /*--------------NAME--------------*/
-    .name h1 {
-        font-family: 'Arapey', serif;
-        text-transform: lowercase;
-        font-size: 1.5rem;
-        letter-spacing: 0.1rem;
-        text-align: center;
-    }
-
-    .name h2 {
-        width: 100%;
-        top: 0rem;
-        left: 100%;
-        padding: 0rem;
-        font-family: 'Arapey', serif;
-        font-size: 0.7rem;
-        position: absolute;
-        z-index: 1;
-        letter-spacing: 0.15rem;
-        line-height: 1rem;
-        text-align: left;
-        text-transform: lowercase;
-    }
-
-    .name h4 {
-        font-family: 'Arapey', serif;
-        font-size: 0.67rem;
-        letter-spacing: 0.3rem;
-        font-style: italic;
-        text-align: center;
-    }
-
-    .name {
-        margin: 1rem;
-        padding: 0rem;
-        line-height: 0.2rem;
-        text-align: center;
-    }
-
-    main {
-        margin-right: 0.5rem;
-        margin-left: 0.5rem;
-    }
-
-    .headings {
-        padding-top: 6rem;
-    }
-
-    header {
-        background: #f9f9f9;
-        width: 100%;
-        height: 7rem;
-        position: fixed;
-        border-bottom: solid 0.01rem lightgray;
-
-    }
-
-}
-
-
-
-
-@media (min-width: 481px) and (max-width: 650px) {
-
     .line {
         width: 98%;
         background: black;
@@ -1002,49 +1093,37 @@ footer a:active {
     }
 
     #landing {
-        padding-top: 12.1rem;
+        margin-top: 2.6rem;
+    }
+    .flex-grid-two > .col-one {
+        width: 0%;
+        flex: 0 1 auto;
+        margin: 0;
     }
 
-
     .fixed-info {
-        left: 25%;
+        left: 35%;
         position: fixed;
     }
 
     nav .rectangle {
         width: 80%;
-        height: 80%;
+        height: 60%;
         background: #f7f7d4;
         position: absolute;
-        top: 10%;
-        left: 75%;
+        top: 0;
+        left: 120%;
         z-index: 0;
-        margin-left: 2rem;
+        margin-left: 1.5rem;
+        margin-top: 1rem;
 
     }
+
 
 
     nav ul {
-        /*    border-left: solid 0.1rem;*/
-        text-transform: lowercase;
-        position: absolute;
-        z-index: 2;
-        padding: 0rem;
-        width: 200%;
-        margin: 0rem;
-        text-align: center;
+        display: none;
 
-    }
-
-    nav li {
-        list-style: none;
-        line-height: 1.5rem;
-        font-size: 0.8rem;
-        text-align: center;
-        letter-spacing: 0.03rem;
-        padding-left: 1.2rem;
-        padding-right: 1.2rem;
-        display: inline;
     }
 
 
@@ -1084,54 +1163,219 @@ footer a:active {
     .name h1 {
         font-family: 'Arapey', serif;
         text-transform: lowercase;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         letter-spacing: 0.1rem;
         text-align: center;
+        margin: 0.3rem;
+        margin-top: 1.5rem;
     }
 
-    .name h2 {
+
+    .rectangle h2 {
         width: 100%;
-        top: 0rem;
-        left: 100%;
-        padding: 0rem;
-        font-family: 'Arapey', serif;
-        font-size: 0.7rem;
-        position: absolute;
-        z-index: 1;
-        letter-spacing: 0.15rem;
-        line-height: 1rem;
-        text-align: left;
-        text-transform: lowercase;
+        margin: 0rem;
+        font-size: 0.5rem;
+
     }
 
     .name h4 {
         font-family: 'Arapey', serif;
-        font-size: 0.67rem;
-        letter-spacing: 0.3rem;
+        font-size: 0.5rem;
+        letter-spacing: 0.25rem;
         font-style: italic;
         text-align: center;
     }
 
+
     .name {
-        margin: 1rem;
+        margin: 0rem;
         padding: 0rem;
         line-height: 0.2rem;
         text-align: center;
     }
 
     main {
-        margin-right: 0.5rem;
-        margin-left: 0.5rem;
+        margin-right: 0rem;
+        margin-left: 0rem;
     }
 
     .headings {
-        padding-top: 4rem;
+        margin-top: 2.5rem;
     }
 
     header {
         background: #f9f9f9;
         width: 100%;
-        height: 7rem;
+        height: 4.5rem;
+        position: fixed;
+        border-bottom: solid 0.01rem lightgray;
+        z-index: 9;
+
+    }
+
+    .contain {
+        padding: 2rem;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 655px) {
+
+    .cont h3 {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+
+    #content .headings {
+        margin-top: 5rem;
+    }
+
+
+    .flex-grid-two > .col-one {
+        width: 0%;
+        flex: 0 1 auto;
+        margin: 0;
+    }
+    .open-hamburger {
+        display: block;
+
+    }
+    .line {
+        width: 98%;
+        background: black;
+        height: 0.06rem;
+        margin-top: 1.1rem;
+        z-index: 100;
+    }
+
+    .case {
+        margin-bottom: 2.5rem;
+    }
+
+    .case h1 {
+        font-size: 1.5rem;
+    }
+
+    .case h2 {
+        font-size: 3rem;
+    }
+
+    .case h4 {
+        display: block;
+        margin: 0rem;
+        margin-left: 2.5rem;
+    }
+
+    #landing {
+        margin-top: 2.6rem;
+    }
+
+
+    .fixed-info {
+        left: 30%;
+        position: fixed;
+    }
+
+    nav .rectangle {
+        width: 80%;
+        height: 60%;
+        background: #f7f7d4;
+        position: absolute;
+        top: 0;
+        left: 120%;
+        z-index: 0;
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+
+    }
+
+
+    nav ul {
+        display: none;
+
+    }
+
+    nav a:link,
+    nav a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    nav a:hover,
+    nav a:focus,
+    nav a:active {
+
+        border-bottom: solid 0.1rem;
+
+    }
+
+    .contact h2 {
+        display: none;
+    }
+
+    .contact a:link,
+    .contact a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    .contact a:hover,
+    .contact a:focus,
+    .contact a:active {
+
+        border-bottom: solid 0.1rem;
+    }
+
+
+    /*--------------NAME--------------*/
+    .name h1 {
+        font-family: 'Arapey', serif;
+        text-transform: lowercase;
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        margin: 0.3rem;
+        margin-top: 1.5rem;
+    }
+
+
+    .rectangle h2 {
+        width: 100%;
+        margin: 0rem;
+        font-size: 0.5rem;
+
+    }
+
+    .name h4 {
+        font-family: 'Arapey', serif;
+        font-size: 0.5rem;
+        letter-spacing: 0.25rem;
+        font-style: italic;
+        text-align: center;
+    }
+
+
+    .name {
+        margin: 0rem;
+        padding: 0rem;
+        line-height: 0.2rem;
+        text-align: center;
+    }
+
+    main {
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+
+    .headings {
+        margin-top: 2.5rem;
+    }
+
+    header {
+        background: #f9f9f9;
+        width: 100%;
+        height: 4.5rem;
         position: fixed;
         border-bottom: solid 0.01rem lightgray;
 
@@ -1144,7 +1388,41 @@ footer a:active {
 
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 390px) and (max-width: 480px) {
+
+
+    .cont h3 {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    #content .headings {
+        margin-top: 5rem;
+    }
+
+
+    .flex-grid-two > .col-one {
+        width: 0%;
+        flex: 0 1 auto;
+        margin: 0;
+    }
+    .open-hamburger {
+        display: block;
+
+    }
+
+    .photography .flex-grid-two .col-one-of-four {
+        position: block;
+        width: 100%;
+        margin-left: 1rem;
+        padding-bottom: 0.5rem;
+
+    }
+
+    .photography .flex-grid-two .col-three-of-four {
+        width: 100%;
+
+    }
 
     .line {
         width: 98%;
@@ -1174,13 +1452,9 @@ footer a:active {
     }
 
     #landing {
-        padding-top: 12.1rem;
+        margin-top: 2.6rem;
     }
 
-
-    .photography .col-one-of-four {
-        display: none;
-    }
 
     .col-three-of-four {
         width: 100%;
@@ -1190,43 +1464,27 @@ footer a:active {
 
 
     .fixed-info {
-        left: 15%;
+        left: 20%;
         position: fixed;
     }
 
     nav .rectangle {
         width: 80%;
-        height: 80%;
+        height: 60%;
         background: #f7f7d4;
         position: absolute;
-        top: 10%;
-        left: 75%;
+        top: 0;
+        left: 120%;
         z-index: 0;
-        margin-left: 2rem;
+        margin-left: 1.5rem;
+        margin-top: 1rem;
 
     }
 
 
     nav ul {
-        /*    border-left: solid 0.1rem;*/
-        text-transform: lowercase;
-        z-index: 2;
-        margin: 0rem;
-        text-align: center;
-        width: 160%;
-        padding: 0rem;
+        display: none;
 
-    }
-
-    nav li {
-        list-style: none;
-        line-height: 1.5rem;
-        font-size: 0.8rem;
-        text-align: center;
-        letter-spacing: 0.03rem;
-        display: inline;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
     }
 
 
@@ -1265,38 +1523,33 @@ footer a:active {
     .name h1 {
         font-family: 'Arapey', serif;
         text-transform: lowercase;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         letter-spacing: 0.1rem;
         text-align: center;
+        margin: 0.3rem;
+        margin-top: 1.5rem;
     }
 
 
-    .name h2 {
+    .rectangle h2 {
         width: 100%;
-        top: 0rem;
-        left: 100%;
-        padding: 0rem;
-        font-family: 'Arapey', serif;
-        font-size: 0.7rem;
-        position: absolute;
-        z-index: 1;
-        letter-spacing: 0.15rem;
-        line-height: 1rem;
-        text-align: left;
-        text-transform: lowercase;
+        margin: 0rem;
+        font-size: 0.5rem;
+
+
     }
 
     .name h4 {
         font-family: 'Arapey', serif;
-        font-size: 0.67rem;
-        letter-spacing: 0.3rem;
+        font-size: 0.5rem;
+        letter-spacing: 0.25rem;
         font-style: italic;
         text-align: center;
     }
 
 
     .name {
-        margin: 1rem;
+        margin: 0rem;
         padding: 0rem;
         line-height: 0.2rem;
         text-align: center;
@@ -1308,16 +1561,17 @@ footer a:active {
     }
 
     .headings {
-        padding-top: 4rem;
+        margin-top: 2.5rem;
     }
 
 
     header {
         background: #f9f9f9;
         width: 100%;
-        height: 7rem;
+        height: 4.5rem;
         position: fixed;
         border-bottom: solid 0.01rem lightgray;
+
 
     }
 
@@ -1325,6 +1579,7 @@ footer a:active {
         border: solid 0.01rem black;
         padding: 1.3rem;
         margin: 0rem;
+        margin-bottom: 2rem;
     }
 
     footer ul {
@@ -1333,6 +1588,223 @@ footer a:active {
 
     footer li {
         padding: 0.5rem;
+    }
+
+    .slide {
+        margin-top: 2rem;
+    }
+
+
+}
+
+@media (min-width: 310px) and (max-width: 389px) {
+
+    .cont h3 {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    #content .headings {
+        margin-top: 5rem;
+    }
+
+    .flex-grid-two > .col-one {
+        width: 0%;
+        flex: 0 1 auto;
+        margin: 0;
+    }
+    .open-hamburger {
+        display: block;
+
+    }
+
+    .photography .flex-grid-two .col-one-of-four {
+        position: block;
+        width: 100%;
+        margin-left: 1rem;
+        padding-bottom: 0.5rem;
+
+    }
+
+    .photography .flex-grid-two .col-three-of-four {
+        width: 100%;
+
+    }
+
+    .line {
+        width: 98%;
+        background: black;
+        height: 0.06rem;
+        margin-top: 1.1rem;
+        z-index: 100;
+    }
+
+    .case {
+        margin-bottom: 2.5rem;
+    }
+
+    .case h1 {
+        font-size: 1rem;
+    }
+
+    .case h2 {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .case h3 {
+        font-size: 0.5rem;
+    }
+
+    .case h4 {
+        display: block;
+        margin: 0rem;
+        margin-left: 2.5rem;
+        font-size: 0.5rem;
+    }
+
+    #landing {
+        margin-top: 2.6rem;
+    }
+
+
+    .col-three-of-four {
+        width: 100%;
+        padding: 0rem;
+        margin: 0rem;
+    }
+
+
+    .fixed-info {
+        left: 15%;
+        position: fixed;
+        z-index: 999;
+    }
+
+    nav .rectangle {
+        width: 80%;
+        height: 60%;
+        background: #f7f7d4;
+        position: absolute;
+        top: 0;
+        left: 120%;
+        z-index: 0;
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+
+    }
+
+
+    nav ul {
+        display: none;
+
+    }
+
+
+    nav a:link,
+    nav a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    nav a:hover,
+    nav a:focus,
+    nav a:active {
+
+        border-bottom: rem;
+
+    }
+
+    .contact h2 {
+        display: none;
+    }
+
+    .contact a:link,
+    .contact a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    .contact a:hover,
+    .contact a:focus,
+    .contact a:active {
+
+        border-bottom: solid 0.1rem;
+    }
+
+    /*--------------NAME--------------*/
+    .name h1 {
+        font-family: 'Arapey', serif;
+        text-transform: lowercase;
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        margin: 0.3rem;
+        margin-top: 1.5rem;
+    }
+
+
+    .rectangle h2 {
+        width: 100%;
+        margin: 0rem;
+        font-size: 0.5rem;
+
+
+    }
+
+    .name h4 {
+        font-family: 'Arapey', serif;
+        font-size: 0.5rem;
+        letter-spacing: 0.25rem;
+        font-style: italic;
+        text-align: center;
+    }
+
+
+    .name {
+        margin: 0rem;
+        padding: 0rem;
+        line-height: 0.2rem;
+        text-align: center;
+    }
+
+    main {
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+
+    .headings {
+        margin-top: 2.5rem;
+    }
+
+
+    header {
+        background: #f9f9f9;
+        width: 100%;
+        height: 4.5rem;
+        position: fixed;
+        border-bottom: solid 0.01rem lightgray;
+
+
+    }
+
+    .contain {
+        border: solid 0.01rem black;
+        padding: 1.3rem;
+        margin: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    footer ul {
+        padding: 0rem;
+    }
+
+    footer li {
+        padding: 0.5rem;
+    }
+
+    footer h3 {
+        display: none;
     }
 
     .slide {

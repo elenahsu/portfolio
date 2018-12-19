@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elena Hsu</title>
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/grid.css" type="text/css">
     <link rel="stylesheet" href="css/flexbox.css" type="text/css">
-    <link rel="stylesheet" href="css/normalize.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Arapey:400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
 
     <!--FAVICON-->
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
@@ -29,7 +31,17 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#0000ff">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#0000ff">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0000ff">
+
+
+
 </head>
 
 <body>
@@ -51,17 +63,18 @@
                         <a href="index.html">
                             <h1>Elena Hsu</h1>
                             <h4>[a-LE-na/su]</h4>
-                            <h2>ux + visual<br> designer
-                            </h2>
+
                         </a>
                     </div>
                     <nav>
                         <div class="rectangle">
+                            <h2>ux + visual<br> designer
+                            </h2>
                         </div>
                         <ul>
                             <li><a href="index.html">Designs</a></li>
                             <li><a href="photography.html" target="_blank">Photography</a></li>
-                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="about.html" class="active">About Me</a></li>
                             <li><a href="resume.pdf" target="_blank">Resume</a></li>
                         </ul>
                     </nav>
@@ -79,7 +92,7 @@
                     <img src="img/lena.jpg" alt="A photo of Elena opening a box of matcha red bean popsicles standing in front of a window display of Pocky">
                 </div>
 
-                <div class="flex-grid-two">
+                <div class="flex-grid-two-project">
                     <div class="col-one">
                         <div class="qualifications">
                             <div class="flex-grid-three">
@@ -89,7 +102,7 @@
 
                                         <h3>Education</h3>
 
-                                        <h5>Simon Fraser University<br> BA. SIAT<br>Design Concentration<br>Sept 2013 - Present</h5>
+                                        <h5>Simon Fraser University<br> BA. Interactive Arts &amp; Technology<br>Design Concentration<br>Sept 2013 - Present</h5>
 
 
                                         <h5>Malmö University<br> K3 Interaction Design<br>Exchange Student<br>Aug 2017 - Jan 2018</h5>
@@ -124,7 +137,7 @@
                             <h3>Huhlo, it's me!</h3>
                             <p>I'm <strong>Elena</strong>,</p>
                             <p>a senior at Simon Fraser University currently majoring in Interactive Arts and Technology and concentrating in <strong>interaction design</strong>.</p>
-                            <p>I am a <strong>experience designer</strong> interested in crafting positive experiences and constructing <a href="cultivate.html">valuable user-centric solutions</a> because I believe in a community that <a href="spilledmilk.html">interculturally connects human beings</a> to one another. Adventure-ready, I like to actively explore <a href="pompom.html">new design approaches</a> while striving for engaging and effective solutions through design, communication, and storytelling.</p>
+                            <p>I am a <strong>experience designer</strong> interested in crafting positive experiences and constructing <a href="vancity.html">valuable user-centric solutions</a> because I believe in a community that <a href="lenacup.html">interculturally connects human beings</a> to one another. Adventure-ready, I like to actively explore <a href="pompom.html">new design approaches</a> while striving for engaging and effective solutions through design, communication, and storytelling.</p>
 
                             <p>A few things about me, I am perpetually curious and easily excited, I love to experience new cultures and travel, I am a firm believer of the Oxford comma, and I have a strong dislike for lemon squares.</p>
 
@@ -167,6 +180,7 @@
     </main>
 
     <footer>
+
         <div class="flex-grid-two">
             <div class="col-one">
             </div>
@@ -203,6 +217,22 @@
         </div>
 
     </footer>
+
+    <div class="open-hamburger">
+        <img src="img/hamicon.png">
+    </div>
+    <div id="hamburger">
+        <ul>
+            <li><a href="index.html">Designs</a></li>
+            <li>
+                <a href="photography.html">Photography</a></li>
+            <li><a class="active" href="about.html">About Me</a></li>
+            <li><a href="resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+        <div class="close-hamburger">
+            <img src="img/closeicon.png">
+        </div>
+    </div>
 </body>
 
 </html>
