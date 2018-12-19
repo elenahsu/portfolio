@@ -3,6 +3,7 @@ $(function () {
     // Get saved data from sessionStorage
     var visited = sessionStorage.getItem('visited');
 
+
     //if we are on the landing page
     if ($("body").hasClass("index") == true) {
         //if we have not visited the landing page before, animate the splash page

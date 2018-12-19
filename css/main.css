@@ -15,7 +15,7 @@ body.index {
     top: 0rem;
     left: 0rem;
     background: white;
-    z-index: 99;
+    z-index: 9999;
 }
 
 
@@ -1819,6 +1819,48 @@ footer a:active {
     .slide {
         margin-top: 2rem;
     }
+
+    #splash {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0rem;
+        left: 0rem;
+        background: white;
+        z-index: 9999;
+    }
+
+
+    #splash h2 {
+        position: absolute;
+        padding: 0rem;
+        top: 30%;
+        left: 13%;
+        font-size: 1.2rem;
+        letter-spacing: 0.05rem;
+        font-size: 1.5rem;
+
+    }
+
+    #splash h3 {
+        padding: 0rem;
+        margin-top: 1rem;
+        position: absolute;
+        top: 37%;
+        left: 13%;
+        color: black;
+        font-weight: 400;
+        line-height: 1.2rem;
+        font-size: 0.7rem;
+    }
+
+    #splash h4 {
+        position: absolute;
+        top: 28%;
+        left: 13%;
+        font-size: 0.5rem;
+    }
+
 
 
 }
