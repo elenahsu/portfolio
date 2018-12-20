@@ -29,7 +29,7 @@ $(function () {
             window.setTimeout(function () {
                 $("#splash").fadeOut();
                 $("body").css("overflow", "auto");
-            }, 3500);
+            }, 3200);
         } else {
             //if we have visited the homepage already, hide the splash page and enable scrolling.
             $("#splash").hide();
