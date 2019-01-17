@@ -515,6 +515,11 @@ strong::selection {
     margin-bottom: 0rem;
 }
 
+.headerimg img {
+    padding-top: 0rem;
+    margin-top: 0rem;
+}
+
 .other p {
     margin-top: 1rem;
 }
