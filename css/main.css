@@ -144,7 +144,7 @@ body {
           border-bottom: 2px solid #0000FF; }
       #shell #sidebar nav ul li {
         text-transform: lowercase;
-        font-size: 12px;
+        font-size: 14px;
         letter-spacing: 0.05rem;
         margin-bottom: 8px;
         color: #0000FF;
