@@ -378,9 +378,8 @@ body {
       #shell #content .full-col .data-block {
         max-width: 600px; }
       #shell #content .full-col.resume {
-        border-top: 0; }
-        #shell #content .full-col.resume a {
-          cursor: pointer; }
+        border-top: 0;
+        cursor: pointer; }
       #shell #content .full-col.image {
         background-size: cover;
         background-position: center center;
