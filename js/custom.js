@@ -1,58 +1,164 @@
 $(function () {
+    $("#barba-wrapper").on("click", ".button", function () {
+        $(".button").removeClass("active")
+        $(this).addClass("active");
+        var filter = $(this).data("filter");
 
-    // Get saved data from sessionStorage
-    var visited = sessionStorage.getItem('visited');
+        $(".filter").each(function () {
+            var topic = $(this).data("topic");
 
+            if (topic == filter) {
+                $(this).addClass("active");
+            } else {
+                $(this).removeClass("active");
+            }
+        });
 
-    //if we are on the landing page
-    if ($("body").hasClass("index") == true) {
-        //if we have not visited the landing page before, animate the splash page
-        if (visited != "true") {
-            //fadeIn(<MILLISECOND VALUE>).
+    });
 
-            window.setTimeout(function () {
-                $("#splash-one").fadeIn();
-            }, 200);
-            window.setTimeout(function () {
-                $(".splash-text").fadeIn();
-            }, 400);
+    //Smooth scroll to top
+    $("#barba-wrapper").on("click", "#top", function () {
+        $("#content").animate({
+            scrollTop: 0
+        }, 1000);
+    });
 
-            window.setTimeout(function () {
-                $("#splash-two").fadeIn();
-            }, 600);
-            window.setTimeout(function () {
-                $("#splash-three").fadeIn();
-            }, 900);
-            window.setTimeout(function () {
-                $("#splash-four").fadeIn();
-            }, 1200);
-            window.setTimeout(function () {
-                $("#splash").fadeOut();
-                $("body").css("overflow", "auto");
-            }, 2500);
-        } else {
-            //if we have visited the homepage already, hide the splash page and enable scrolling.
-            $("#splash").hide();
-            $("body").css("overflow", "auto");
+    var ww = $(window).innerWidth();
+
+    $(document).on("click", ".nav-link", function () {
+
+        if (ww <= 768) {
+            $("#sidebar").fadeOut();
+            $(this).html("&#8801;");
+            $(this).removeClass("active");
         }
+    });
 
+    $(document).on("click", "#menu", function () {
+        if ($(this).hasClass("active")) {
+            $("#sidebar").fadeOut();
+            $(this).html("&#8801;");
+            $(this).removeClass("active");
+        } else {
+            $("#sidebar").fadeIn();
+            $(this).addClass("active");
+            $(this).html("&times;");
+
+        }
+    });
+
+    //wavy text
+    var text = "elena hsu —";
+    var text2 = "an experience and";
+    var text3 = "visual designer";
+
+    for (var i in text) {
+        if (text[i] === " ") {
+            $(".one").append($("<span>").html("&nbsp;"));
+        } else {
+            $(".one").append($("<span>").text(text[i]));
+        }
+    }
+
+    for (var i in text2) {
+        if (text2[i] === " ") {
+            $(".two").append($("<span>").html("&nbsp;"));
+        } else {
+            $(".two").append($("<span>").text(text2[i]));
+        }
+    }
+
+    for (var i in text3) {
+        if (text3[i] === " ") {
+            $(".three").append($("<span>").html("&nbsp;"));
+        } else {
+            $(".three").append($("<span>").text(text3[i]));
+        }
     }
 
 
+    Barba.Pjax.start();
 
-    $(".open-hamburger").click(function () {
 
-        $("#hamburger").fadeIn();
-        $("body").css("overflow", "hidden");
+
+    var FadeTransition = Barba.BaseTransition.extend({
+        start: function () {
+            /**
+             * This function is automatically called as soon the Transition starts
+             * this.newContainerLoading is a Promise for the loading of the new container
+             * (Barba.js also comes with an handy Promise polyfill!)
+             */
+
+            //            $("html").css("overflow-y", "hidden");
+            //            $("body").css("overflow", "hidden");
+
+            // As soon the loading is finished and the old page is faded out, let's fade the new page
+            Promise
+                .all([this.newContainerLoading, this.fadeOut()])
+                .then(this.fadeIn.bind(this));
+        },
+
+        fadeOut: function () {
+            /**
+             * this.oldContainer is the HTMLElement of the old Container
+             */
+
+            return $(this.oldContainer).animate({
+                opacity: 0
+            }).promise();
+        },
+
+        fadeIn: function () {
+            /**
+             * this.newContainer is the HTMLElement of the new Container
+             * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
+             * Please note, newContainer is available just after newContainerLoading is resolved!
+             */
+            $(window).scrollTop(0);
+            $("#content").scrollTop(0);
+            var _this = this;
+            var $el = $(this.newContainer);
+
+            $(this.oldContainer).hide();
+
+            $el.css({
+                visibility: 'visible',
+                opacity: 0
+            });
+
+            $el.animate({
+                opacity: 1
+            }, 1000, function () {
+                /**
+                 * Do not forget to call .done() as soon your transition is finished!
+                 * .done() will automatically remove from the DOM the old Container
+                 */
+
+                _this.done();
+
+            });
+        }
     });
 
-    $(".close-hamburger").click(function () {
+    /**
+     * Next step, you have to tell Barba to use the new Transition
+     */
 
-        $("#hamburger").fadeOut();
-        $("body").css("overflow", "auto");
+    Barba.Pjax.getTransition = function () {
+        /**
+         * Here you can use your own logic!
+         * For example you can use different Transition based on the current page or link...
+         */
+
+        return FadeTransition;
+    };
+
+    Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, container) {
+
+
+
+
+
     });
 
-    // Save data to sessionStorage
-    sessionStorage.setItem('visited', 'true');
-
-}); //END
+});
