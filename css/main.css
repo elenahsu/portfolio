@@ -588,7 +588,7 @@ body {
   margin: 0;
   color: #0000FF;
   text-transform: lowercase;
-  font-weight: bold;
+  font-weight: 700;
   -webkit-animation-duration: 0.95s;
   animation-duration: 0.95s;
   -webkit-animation-name: wave;
