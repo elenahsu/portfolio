@@ -448,8 +448,8 @@ body {
 
             &.resume {
                 border-top: 0;
-          
-                    cursor: pointer;
+
+                cursor: pointer;
             }
 
 
@@ -736,6 +736,7 @@ $duration: 0.95;
     margin: 0;
     color: $blue;
     text-transform: lowercase;
+    font-weight: bold;
 
     animation-duration: #{$duration}s;
     animation-name: wave;
