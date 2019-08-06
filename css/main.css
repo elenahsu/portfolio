@@ -481,7 +481,8 @@ body {
         padding: 1%; }
         #shell #content .two-third-col.gallery .gallery-image {
           width: 30%;
-          margin: 1%; }
+          margin: 1%;
+          height: unset; }
     #shell #content #notification {
       padding: 40px;
       border-bottom: 3px solid #0000FF;
