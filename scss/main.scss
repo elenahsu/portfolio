@@ -325,6 +325,10 @@ body {
                     font-size: 14px;
                     margin-top: 0.8rem;
                 }
+
+                &.red {
+                    color: $red;
+                }
             }
         }
 

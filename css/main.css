@@ -298,6 +298,11 @@ body {
         margin-bottom: 0.8rem;
         font-size: 14px;
         margin-top: 0.8rem; }
+      #shell #content .half-col h6.red,
+      #shell #content .full-col h6.red,
+      #shell #content .third-col h6.red,
+      #shell #content .two-third-col h6.red {
+        color: #D21930; }
     #shell #content .half-col {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
