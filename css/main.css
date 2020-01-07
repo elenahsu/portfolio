@@ -416,6 +416,12 @@ body {
         background-image: url("../img/projects/lena/lena.jpg"); }
       #shell #content .full-col#touchy {
         background-image: url("../img/projects/touchy/touchy.jpg"); }
+      #shell #content .full-col#christine {
+        background-image: url(""); }
+      #shell #content .full-col#sjma {
+        background-image: url("../img/projects/sjma/sjma.jpg"); }
+      #shell #content .full-col#japanesehall {
+        background-image: url("../img/projects/japanesehall/japanesehall.jpg"); }
       #shell #content .full-col#peak-canada {
         background-image: url("../img/projects/thepeak/canadian.jpg"); }
       #shell #content .full-col#peak-period {
@@ -532,7 +538,7 @@ body {
       display: flex;
       display: -webkit-flex;
       border-bottom: 3px solid #0000FF; }
-      #shell #content .project#peak {
+      #shell #content .project#touchy {
         border-bottom: 0px; }
       #shell #content .project .project-img {
         -webkit-box-flex: 0;
@@ -547,8 +553,14 @@ body {
           background-image: url("../img/thumbnails/vancity.jpg"); }
         #shell #content .project .project-img#lena-img {
           background-image: url("../img/thumbnails/lena.jpg"); }
+        #shell #content .project .project-img#sjma-img {
+          background-image: url("../img/thumbnails/sjma.jpg"); }
         #shell #content .project .project-img#touchy-img {
           background-image: url("../img/thumbnails/touchy.jpg"); }
+        #shell #content .project .project-img#japanesehall-img {
+          background-image: url("../img/thumbnails/japanesehall.jpg"); }
+        #shell #content .project .project-img#christine-img {
+          background-image: url("../img/thumbnails/christine.jpg"); }
         #shell #content .project .project-img#peak-img {
           background-image: url("../img/thumbnails/peak.jpg"); }
       #shell #content .project .project-title {
