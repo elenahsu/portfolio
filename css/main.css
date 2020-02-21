@@ -150,7 +150,7 @@ body {
       #shell #sidebar nav ul li {
         text-transform: lowercase;
         font-size: 14px;
-        letter-spacing: 0.05rem;
+        letter-spacing: 0.03rem;
         margin-bottom: 8px;
         color: #0000FF;
         font-weight: bold;
@@ -258,7 +258,7 @@ body {
         #shell #content .two-third-col .data-block p {
           margin: 0;
           font-size: 14px;
-          letter-spacing: 0.05rem;
+          letter-spacing: 0.03rem;
           line-height: 1.3rem;
           padding-bottom: 0rem; }
         #shell #content .half-col .data-block a,
@@ -287,14 +287,14 @@ body {
             padding-left: 5px;
             margin: 0;
             font-size: 12px;
-            letter-spacing: 0.05rem;
+            letter-spacing: 0.03rem;
             line-height: 1.3rem; }
       #shell #content .half-col h6.section-head,
       #shell #content .full-col h6.section-head,
       #shell #content .third-col h6.section-head,
       #shell #content .two-third-col h6.section-head {
         text-transform: uppercase;
-        letter-spacing: 0.05rem;
+        letter-spacing: 0.03rem;
         margin-bottom: 0.8rem;
         font-size: 14px;
         margin-top: 0.8rem; }
@@ -384,7 +384,7 @@ body {
           margin: 0;
           margin-bottom: 10px;
           font-size: 16px;
-          letter-spacing: 0.05rem;
+          letter-spacing: 0.03rem;
           line-height: 1.3rem; }
     #shell #content .full-col {
       -webkit-box-flex: 0;
@@ -512,7 +512,7 @@ body {
         border-bottom: none; }
       #shell #content #notification h4 {
         font-size: 24px;
-        letter-spacing: 0.05rem;
+        letter-spacing: 0.03rem;
         margin: 0;
         color: #222222;
         margin-bottom: 5px;
@@ -574,7 +574,7 @@ body {
         #shell #content .project .project-title h2 {
           text-transform: lowercase;
           color: #0000FF;
-          letter-spacing: 0.05rem;
+          letter-spacing: 0.03rem;
           font-size: 28px;
           margin: 0;
           margin-bottom: 5px;
@@ -582,7 +582,7 @@ body {
         #shell #content .project .project-title h3 {
           color: #D21930;
           text-transform: lowercase;
-          letter-spacing: 0.05rem;
+          letter-spacing: 0.03rem;
           font-size: 16px;
           font-weight: normal;
           margin: 0;
