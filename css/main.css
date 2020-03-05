@@ -386,6 +386,8 @@ body {
           font-size: 16px;
           letter-spacing: 0.03rem;
           line-height: 1.3rem; }
+    #shell #content .white {
+      background: white; }
     #shell #content .full-col {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
@@ -417,7 +419,7 @@ body {
       #shell #content .full-col#touchy {
         background-image: url("../img/projects/touchy/touchy.jpg"); }
       #shell #content .full-col#christine {
-        background-image: url(""); }
+        background-image: url("../img/projects/christine/christine.jpg"); }
       #shell #content .full-col#sjma {
         background-image: url("../img/projects/sjma/sjma.jpg"); }
       #shell #content .full-col#japanesehall {

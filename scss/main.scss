@@ -454,7 +454,9 @@ body {
 
 
         }
-
+        .white {
+            background: white;
+        }
         .full-col {
             flex: 0 0 100%;
             -webkit-flex: 0 0 100%;
@@ -502,7 +504,7 @@ body {
             }
 
             &#christine {
-                background-image: url("")
+                background-image: url("../img/projects/christine/christine.jpg")
             }
 
             &#sjma {
