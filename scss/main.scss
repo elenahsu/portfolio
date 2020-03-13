@@ -25,30 +25,28 @@ body {
     font-weight: 400;
     font-family: $font1;
     @include break (tablet) {
+        position: absolute;
         display: block;
         font-size: 10px;
         letter-spacing: 0.05rem;
         text-transform: uppercase;
         font-weight: 400;
         font-family: $font1;
-        position: absolute;
+
         z-index: 30;
-        top: 0;
-        right: 50px;
-        padding: 10px;
-        height: 75px;
+        right: 20px;
+        top: 25px;
         box-sizing: border-box;
         cursor: pointer;
+
     }
 }
 
 #menu-block {
     position: absolute;
     width: 100%;
-    height: 75px;
     color: $blue;
-    margin-left: 20px;
-    margin-top: 20px;
+    top: -10px;
     z-index: 50;
     display: none;
     @include break (tablet) {
@@ -94,7 +92,7 @@ body {
         max-height: unset;
         box-sizing: border-box;
         position: relative;
-        top: 75px;
+        top: 50px;
 
     }
 
@@ -590,35 +588,6 @@ body {
 
             &#japanesehall {
                 background-image: url("../img/projects/japanesehall/japanesehall.jpg")
-            }
-
-
-            &#peak-canada {
-                background-image: url("../img/projects/thepeak/canadian.jpg")
-            }
-
-            &#peak-period {
-                background-image: url("../img/projects/thepeak/period.jpg")
-            }
-            &#peak-bard {
-                background-image: url("../img/projects/thepeak/bard.jpg")
-            }
-
-            &#peak-fairtrade {
-                background-image: url("../img/projects/thepeak/fairtrade.jpg")
-            }
-
-            &#peak-stem {
-                background-image: url("../img/projects/thepeak/STEM.jpg")
-            }
-            &#peak-food {
-                background-image: url("../img/projects/thepeak/food%20trucks.jpg")
-            }
-            &#peak-nightmarket {
-                background-image: url("../img/projects/thepeak/nightmarket.jpg")
-            }
-            &#peak-humour {
-                background-image: url("../img/projects/thepeak/humour.jpg")
             }
 
             &#t-vision {

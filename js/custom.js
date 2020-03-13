@@ -28,7 +28,6 @@ $(function () {
 
         if (ww <= 768) {
             $("#sidebar").fadeOut();
-            $(this).html("MENU;");
             $(this).removeClass("active");
         }
     });

@@ -24,18 +24,16 @@ body {
     font-family: karla, helvetica, arial, sans-serif; }
   @media (max-width: 768px) {
     #menu {
+      position: absolute;
       display: block;
       font-size: 10px;
       letter-spacing: 0.05rem;
       text-transform: uppercase;
       font-weight: 400;
       font-family: karla, helvetica, arial, sans-serif;
-      position: absolute;
       z-index: 30;
-      top: 0;
-      right: 50px;
-      padding: 10px;
-      height: 75px;
+      right: 20px;
+      top: 25px;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       cursor: pointer; } }
@@ -43,10 +41,8 @@ body {
 #menu-block {
   position: absolute;
   width: 100%;
-  height: 75px;
   color: #222222;
-  margin-left: 20px;
-  margin-top: 20px;
+  top: -10px;
   z-index: 50;
   display: none; }
   @media (max-width: 768px) {
@@ -91,7 +87,7 @@ body {
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       position: relative;
-      top: 75px; } }
+      top: 50px; } }
   #shell #sidebar {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 20%;
@@ -485,22 +481,6 @@ body {
         background-image: url("../img/projects/sjma/sjma.jpg"); }
       #shell #content .full-col#japanesehall {
         background-image: url("../img/projects/japanesehall/japanesehall.jpg"); }
-      #shell #content .full-col#peak-canada {
-        background-image: url("../img/projects/thepeak/canadian.jpg"); }
-      #shell #content .full-col#peak-period {
-        background-image: url("../img/projects/thepeak/period.jpg"); }
-      #shell #content .full-col#peak-bard {
-        background-image: url("../img/projects/thepeak/bard.jpg"); }
-      #shell #content .full-col#peak-fairtrade {
-        background-image: url("../img/projects/thepeak/fairtrade.jpg"); }
-      #shell #content .full-col#peak-stem {
-        background-image: url("../img/projects/thepeak/STEM.jpg"); }
-      #shell #content .full-col#peak-food {
-        background-image: url("../img/projects/thepeak/food%20trucks.jpg"); }
-      #shell #content .full-col#peak-nightmarket {
-        background-image: url("../img/projects/thepeak/nightmarket.jpg"); }
-      #shell #content .full-col#peak-humour {
-        background-image: url("../img/projects/thepeak/humour.jpg"); }
       #shell #content .full-col#t-vision {
         background-image: url("../img/projects/touchy/vision.jpeg"); }
       #shell #content .full-col.flex {
