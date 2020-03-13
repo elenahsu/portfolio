@@ -15,7 +15,6 @@ $(function () {
         });
 
     });
-
     //Smooth scroll to top
     $("#barba-wrapper").on("click", "#top", function () {
         $("#content").animate({
@@ -29,7 +28,7 @@ $(function () {
 
         if (ww <= 768) {
             $("#sidebar").fadeOut();
-            $(this).html("&#8801;");
+            $(this).html("MENU;");
             $(this).removeClass("active");
         }
     });
@@ -37,44 +36,16 @@ $(function () {
     $(document).on("click", "#menu", function () {
         if ($(this).hasClass("active")) {
             $("#sidebar").fadeOut();
-            $(this).html("&#8801;");
+            $(this).html("MENU");
             $(this).removeClass("active");
         } else {
             $("#sidebar").fadeIn();
             $(this).addClass("active");
-            $(this).html("&times;");
+            $(this).html("CLOSE");
 
         }
     });
 
-    //wavy text
-    var text = "elena hsu —";
-    var text2 = "an experience and";
-    var text3 = "visual designer";
-
-    for (var i in text) {
-        if (text[i] === " ") {
-            $(".one").append($("<span>").html("&nbsp;"));
-        } else {
-            $(".one").append($("<span>").text(text[i]));
-        }
-    }
-
-    for (var i in text2) {
-        if (text2[i] === " ") {
-            $(".two").append($("<span>").html("&nbsp;"));
-        } else {
-            $(".two").append($("<span>").text(text2[i]));
-        }
-    }
-
-    for (var i in text3) {
-        if (text3[i] === " ") {
-            $(".three").append($("<span>").html("&nbsp;"));
-        } else {
-            $(".three").append($("<span>").text(text3[i]));
-        }
-    }
 
 
     Barba.Pjax.start();
