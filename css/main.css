@@ -575,7 +575,7 @@ body {
       @media (max-width: 768px) {
         #shell #content .jh img {
           width: 28%;
-          opacity: none;
+          opacity: 1;
           z-index: -20; } }
     #shell #content .jh:hover img {
       opacity: 1;
@@ -584,7 +584,7 @@ body {
       transition: all 0.5s ease; }
       @media (max-width: 768px) {
         #shell #content .jh:hover img {
-          opacity: none; } }
+          opacity: 1; } }
     #shell #content .project-link {
       text-decoration: none; }
       #shell #content .project-link:hover img {
