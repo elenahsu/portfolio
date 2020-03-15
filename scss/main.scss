@@ -73,7 +73,7 @@ body {
 }
 
 #shell {
-    //    border: 3px solid $blue;
+    border: 1px solid $blue;
     width: 80%;
     height: 80%;
     display: flex;
@@ -99,7 +99,8 @@ body {
 
     #sidebar {
         flex: 0 1 20%;
-        -webkit-flex: 0 1 20%; //        border-right: 3px solid $blue;
+        -webkit-flex: 0 1 20%;
+        border-right: 1px solid black;
         position: relative;
 
         @include break (tablet) {
@@ -665,6 +666,7 @@ body {
             margin-bottom: 30px;
             margin-top: 20px;
             border-bottom: 1px solid black;
+            padding-left: 20px;
 
             h1 {
                 text-align: left;
