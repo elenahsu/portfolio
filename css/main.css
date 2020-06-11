@@ -15,13 +15,13 @@ body {
   letter-spacing: 0.05rem;
   text-transform: uppercase;
   font-weight: 400;
-  font-family: karla, helvetica, arial, sans-serif; }
+  font-family: arsenal, helvetica, arial, sans-serif; }
   #menu h2 {
     font-size: 12px;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     font-weight: 400;
-    font-family: karla, helvetica, arial, sans-serif; }
+    font-family: arsenal, helvetica, arial, sans-serif; }
   @media (max-width: 768px) {
     #menu {
       position: absolute;
@@ -30,7 +30,7 @@ body {
       letter-spacing: 0.05rem;
       text-transform: uppercase;
       font-weight: 400;
-      font-family: karla, helvetica, arial, sans-serif;
+      font-family: arsenal, helvetica, arial, sans-serif;
       z-index: 30;
       right: 20px;
       top: 25px;
@@ -60,7 +60,7 @@ body {
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     font-weight: 400;
-    font-family: karla, helvetica, arial, sans-serif; }
+    font-family: arsenal, helvetica, arial, sans-serif; }
 
 #shell {
   border: 1px solid #222222;
@@ -106,7 +106,7 @@ body {
         -webkit-flex: unset;
         width: 100%;
         height: 100%;
-        background: #f8f8f8; } }
+        background: #222222; } }
     #shell #sidebar #sidebar-wrapper {
       width: 100%;
       height: 100%;
@@ -123,7 +123,7 @@ body {
       letter-spacing: 0.03rem;
       margin: 0rem; }
     #shell #sidebar h2 {
-      font-family: karla, helvetica, arial, sans-serif;
+      font-family: arsenal, helvetica, arial, sans-serif;
       text-transform: uppercase;
       font-weight: 400;
       letter-spacing: 0.05rem;
@@ -142,7 +142,7 @@ body {
             color: darkgray; }
         #shell #sidebar #socials ul li {
           color: #222222;
-          font-family: karla, helvetica, arial, sans-serif;
+          font-family: arsenal, helvetica, arial, sans-serif;
           text-transform: uppercase;
           font-size: 10px;
           letter-spacing: 0.05rem;
@@ -162,7 +162,7 @@ body {
             color: darkgray; }
         #shell #sidebar nav ul li {
           color: #222222;
-          font-family: karla, helvetica, arial, sans-serif;
+          font-family: arsenal, helvetica, arial, sans-serif;
           text-transform: uppercase;
           font-size: 10px;
           letter-spacing: 0.05rem;
@@ -263,7 +263,7 @@ body {
       #shell #content .full-col h2,
       #shell #content .third-col h2,
       #shell #content .two-third-col h2 {
-        font-family: karla, helvetica, arial, sans-serif;
+        font-family: arsenal, helvetica, arial, sans-serif;
         text-transform: uppercase;
         font-weight: 400;
         letter-spacing: 0.05rem;
@@ -317,16 +317,22 @@ body {
       #shell #content .third-col .data-block,
       #shell #content .two-third-col .data-block {
         padding-bottom: 15px; }
-        #shell #content .half-col .data-block strong.bold,
-        #shell #content .full-col .data-block strong.bold,
-        #shell #content .third-col .data-block strong.bold,
-        #shell #content .two-third-col .data-block strong.bold {
-          color: blue; }
+        #shell #content .half-col .data-block strong,
+        #shell #content .full-col .data-block strong,
+        #shell #content .third-col .data-block strong,
+        #shell #content .two-third-col .data-block strong {
+          font-weight: 400; }
+          #shell #content .half-col .data-block strong.bold,
+          #shell #content .full-col .data-block strong.bold,
+          #shell #content .third-col .data-block strong.bold,
+          #shell #content .two-third-col .data-block strong.bold {
+            color: #CF4C2D;
+            font-weight: 400; }
         #shell #content .half-col .data-block p,
         #shell #content .full-col .data-block p,
         #shell #content .third-col .data-block p,
         #shell #content .two-third-col .data-block p {
-          font-family: karla, helvetica, arial, sans-serif;
+          font-family: arsenal, helvetica, arial, sans-serif;
           margin: 0;
           font-size: 14px;
           letter-spacing: 0.03rem;
@@ -354,24 +360,24 @@ body {
           #shell #content .full-col .data-block ol li,
           #shell #content .third-col .data-block ol li,
           #shell #content .two-third-col .data-block ol li {
-            font-family: karla, helvetica, arial, sans-serif;
+            font-family: arsenal, helvetica, arial, sans-serif;
             padding: 0px;
             padding-left: 5px;
             margin: 0;
-            font-size: 10px;
+            font-size: 12px;
             letter-spacing: 0.03rem;
             line-height: 1.3rem; }
       #shell #content .half-col h6.section-head,
       #shell #content .full-col h6.section-head,
       #shell #content .third-col h6.section-head,
       #shell #content .two-third-col h6.section-head {
-        font-family: karla, helvetica, arial, sans-serif;
+        font-family: arsenal, helvetica, arial, sans-serif;
         text-transform: uppercase;
         letter-spacing: 0.05rem;
         margin-bottom: 0.8rem;
         font-size: 12px;
         margin-top: 0.8rem;
-        font-weight: bold; }
+        font-weight: 400; }
       #shell #content .half-col h6.red,
       #shell #content .full-col h6.red,
       #shell #content .third-col h6.red,
@@ -421,7 +427,7 @@ body {
           padding-left: 5px;
           margin: 0;
           margin-bottom: 10px;
-          font-size: 12px;
+          font-size: 1px;
           letter-spacing: 0.03rem;
           line-height: 1.3rem; }
     #shell #content .white {
@@ -449,7 +455,7 @@ body {
           color: darkgray; }
       #shell #content .full-col.project-nav p {
         display: inline;
-        font-family: karla, helvetica, arial, sans-serif;
+        font-family: arsenal, helvetica, arial, sans-serif;
         text-transform: uppercase;
         font-size: 10px;
         letter-spacing: 0.05rem;
@@ -546,7 +552,7 @@ body {
       #shell #content #landing-hero h1 {
         text-align: left;
         letter-spacing: 0.05rem;
-        font-family: karla, helvetica, arial, sans-serif;
+        font-family: arsenal, helvetica, arial, sans-serif;
         font-weight: 400;
         text-transform: uppercase;
         font-size: 12px;
@@ -604,7 +610,7 @@ body {
           margin-bottom: 5px; }
         #shell #content .project .project-title h3 {
           color: #222222;
-          font-family: karla, helvetica, arial, sans-serif;
+          font-family: arsenal, helvetica, arial, sans-serif;
           text-transform: uppercase;
           letter-spacing: 0.05rem;
           font-size: 12px;
