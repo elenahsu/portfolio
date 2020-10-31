@@ -18,6 +18,18 @@ body {
   overflow: hidden;
   position: relative; }
 
+::-moz-selection {
+  background: #DFFF00;
+  /* WebKit/Blink Browsers */ }
+
+::selection {
+  background: #DFFF00;
+  /* WebKit/Blink Browsers */ }
+
+::-moz-selection {
+  background: #DFFF00;
+  /* Gecko Browsers */ }
+
 #shell {
   border: 1px solid #222222;
   width: 80%;

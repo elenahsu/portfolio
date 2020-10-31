@@ -42,16 +42,15 @@ body {
 //    background: none;
 //
 //}
-//
-//::selection {
-//    background: $chartreuse;
-//    /* WebKit/Blink Browsers */
-//}
-//
-//::-moz-selection {
-//    background: $chartreuse;
-//    /* Gecko Browsers */
-//}
+::selection {
+    background: $chartreuse;
+    /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: $chartreuse;
+    /* Gecko Browsers */
+}
 #shell {
     border: 1px solid $black;
     width: 80%;
