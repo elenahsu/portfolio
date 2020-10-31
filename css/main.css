@@ -1,66 +1,22 @@
 /*********************
 BREAKPOINTS
 *********************/
+@font-face {
+  font-family: 'gangster';
+  src: url("../fonts/gangster/gangstergrotesk-regular.woff") format("woff2"), url("../fonts/gangster/gangstergrotesk-regular.woff") format("woff"), url("../fonts/gangster/gangstergrotesk-regular.otf") format("truetype"); }
+
+@font-face {
+  font-family: 'sporting';
+  src: url("../fonts/sporting/Regular/Sporting_Grotesque-Regular_web.woff2") format("woff2"), url("../fonts/sporting/Regular/Sporting_Grotesque-Regular_web.woff") format("woff"), url("../fonts/sporting/Regular/Sporting_Grotesque-Regular_web.otf") format("truetype"); }
+
 html,
 body {
   background: #f8f8f8;
   width: 100%;
   height: 100%;
+  font-family: gangster, helvetica, arial, sans-serif;
   overflow: hidden;
   position: relative; }
-
-#menu {
-  display: none;
-  font-size: 12px;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-family: arsenal, helvetica, arial, sans-serif; }
-  #menu h2 {
-    font-size: 12px;
-    letter-spacing: 0.05rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-family: arsenal, helvetica, arial, sans-serif; }
-  @media (max-width: 768px) {
-    #menu {
-      position: absolute;
-      display: block;
-      font-size: 10px;
-      letter-spacing: 0.05rem;
-      text-transform: uppercase;
-      font-weight: 400;
-      font-family: arsenal, helvetica, arial, sans-serif;
-      z-index: 30;
-      right: 20px;
-      top: 25px;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      cursor: pointer; } }
-
-#menu-block {
-  position: absolute;
-  width: 100%;
-  color: #222222;
-  top: -10px;
-  z-index: 50;
-  display: none; }
-  @media (max-width: 768px) {
-    #menu-block {
-      display: block; } }
-  #menu-block h1 {
-    margin-left: 20px;
-    font-family: prata, serif;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.03rem;
-    margin: 0rem; }
-  #menu-block h2 {
-    font-size: 10px;
-    letter-spacing: 0.05rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-family: arsenal, helvetica, arial, sans-serif; }
 
 #shell {
   border: 1px solid #222222;
@@ -72,11 +28,12 @@ body {
   display: -webkit-flex;
   max-width: 1280px;
   max-height: 745px;
-  background: white; }
-  @media (max-width: 768px) {
+  background: white;
+  position: fixed; }
+  @media (max-width: 1020px) {
     #shell {
       width: calc(99%);
-      height: calc(99% - 75px);
+      height: calc(99%);
       margin: auto;
       position: relative;
       top: unset;
@@ -87,99 +44,92 @@ body {
       max-height: unset;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      position: relative;
-      top: 50px; } }
-  #shell #sidebar {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 20%;
-    flex: 0 1 20%;
-    -webkit-flex: 0 1 20%;
-    border-right: 1px solid black;
-    position: relative; }
-    @media (max-width: 768px) {
-      #shell #sidebar {
-        display: none;
-        position: absolute;
-        -webkit-box-flex: unset;
-        -ms-flex: unset;
-        flex: unset;
-        -webkit-flex: unset;
-        width: 100%;
-        height: 100%;
-        background: white; } }
-    #shell #sidebar #sidebar-wrapper {
-      width: 100%;
-      height: 100%;
-      padding: 30px;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box; }
-    #shell #sidebar a {
-      text-decoration: none;
-      color: black; }
-    #shell #sidebar h1 {
-      font-family: prata, serif;
-      font-size: 16px;
-      font-weight: 400;
-      letter-spacing: 0.03rem;
-      margin: 0rem; }
-    #shell #sidebar h2 {
-      font-family: arsenal, helvetica, arial, sans-serif;
-      text-transform: uppercase;
-      font-weight: 400;
-      letter-spacing: 0.05rem;
-      font-size: 10px; }
-    #shell #sidebar #socials {
-      position: absolute;
-      bottom: 0; }
-      #shell #sidebar #socials ul {
-        list-style: none;
-        -webkit-padding-start: 0;
-        padding-inline-start: 0; }
-        #shell #sidebar #socials ul a {
-          display: block;
-          text-decoration: none; }
-          #shell #sidebar #socials ul a:hover li {
-            color: darkgray; }
-        #shell #sidebar #socials ul li {
-          color: #222222;
-          font-family: arsenal, helvetica, arial, sans-serif;
-          text-transform: uppercase;
-          font-size: 10px;
-          letter-spacing: 0.05rem;
-          margin-bottom: 8px;
-          display: inline-block; }
-    #shell #sidebar nav {
-      z-index: 20;
-      margin-top: 50px; }
-      #shell #sidebar nav ul {
-        list-style: none;
-        -webkit-padding-start: 0;
-        padding-inline-start: 0; }
-        #shell #sidebar nav ul a {
-          display: block;
-          text-decoration: none; }
-          #shell #sidebar nav ul a:hover li {
-            color: darkgray; }
-        #shell #sidebar nav ul li {
-          color: #222222;
-          font-family: arsenal, helvetica, arial, sans-serif;
-          text-transform: uppercase;
-          font-size: 10px;
-          letter-spacing: 0.05rem;
-          margin-bottom: 8px;
-          display: inline-block; }
+      position: relative; } }
   #shell #content {
     -webkit-box-flex: 0;
-    -ms-flex: 0 1 80%;
-    flex: 0 1 80%;
-    -webkit-flex: 0 1 80%;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    -webkit-flex: 0 1 100%;
     overflow-y: overlay;
     height: 100%;
     overflow-x: hidden;
     /* width */
     /* Track */
     /* Handle */ }
-    @media (max-width: 768px) {
+    #shell #content nav {
+      z-index: 1;
+      background: white;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      width: 100%;
+      font-weight: 300;
+      position: fixed;
+      letter-spacing: 0.03rem;
+      border-bottom: 1px solid black;
+      font-size: 10px;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      padding-top: 5px; }
+      @media (max-width: 1020px) {
+        #shell #content nav {
+          width: 98.6%; } }
+      #shell #content nav #topbar-left ul {
+        list-style: none; }
+        #shell #content nav #topbar-left ul li {
+          margin-right: 20px;
+          float: left; }
+        #shell #content nav #topbar-left ul li a {
+          color: black;
+          text-decoration: none; }
+        #shell #content nav #topbar-left ul li a:hover {
+          color: #222222;
+          background: #DFFF00; }
+      #shell #content nav #topbar-right ul {
+        list-style: none;
+        margin-right: 20px; }
+      #shell #content nav #topbar-right li {
+        float: right; }
+      #shell #content nav #topbar-right li a {
+        color: black;
+        text-decoration: none; }
+      #shell #content nav #topbar-right li a:hover {
+        color: #222222;
+        background: #DFFF00;
+        text-decoration: underline; }
+    #shell #content #footer {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      width: 100%;
+      background: #222222;
+      letter-spacing: 0.03rem;
+      text-transform: uppercase;
+      font-size: 10px;
+      padding-top: 5px;
+      padding-bottom: 05px; }
+      #shell #content #footer p {
+        padding-left: 20px;
+        color: white;
+        text-transform: none; }
+      #shell #content #footer ul {
+        list-style: none; }
+      #shell #content #footer li {
+        float: right;
+        margin-right: 20px; }
+      #shell #content #footer li a {
+        color: white;
+        text-decoration: none; }
+      #shell #content #footer li a:hover,
+      #shell #content #footer a:active {
+        background: #DFFF00;
+        color: #222222; }
+    #shell #content #fun {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      width: 100%; }
+    @media (max-width: 1020px) {
       #shell #content {
         -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
@@ -196,99 +146,69 @@ body {
     #shell #content .half-col,
     #shell #content .full-col,
     #shell #content .third-col,
+    #shell #content .four-col,
+    #shell #content .five-col,
+    #shell #content .three-four-col,
     #shell #content .two-third-col {
-      padding: 20px;
+      padding-top: 25px;
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-bottom: 15px;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
+      border-top: 1px solid #222222;
       margin: 0; }
       @media (max-width: 550px) {
         #shell #content .half-col,
         #shell #content .full-col,
         #shell #content .third-col,
+        #shell #content .four-col,
+        #shell #content .five-col,
+        #shell #content .three-four-col,
         #shell #content .two-third-col {
           padding: 20px; } }
-      #shell #content .half-col .center,
-      #shell #content .full-col .center,
-      #shell #content .third-col .center,
-      #shell #content .two-third-col .center {
-        text-align: center;
-        padding-left: 50px; }
-        @media (max-width: 550px) {
-          #shell #content .half-col .center,
-          #shell #content .full-col .center,
-          #shell #content .third-col .center,
-          #shell #content .two-third-col .center {
-            padding: 0px; } }
-        #shell #content .half-col .center h1,
-        #shell #content .full-col .center h1,
-        #shell #content .third-col .center h1,
-        #shell #content .two-third-col .center h1 {
-          padding-top: 50px;
-          padding-right: 50px; }
-          @media (max-width: 550px) {
-            #shell #content .half-col .center h1,
-            #shell #content .full-col .center h1,
-            #shell #content .third-col .center h1,
-            #shell #content .two-third-col .center h1 {
-              padding: 0px; } }
-        #shell #content .half-col .center img,
-        #shell #content .full-col .center img,
-        #shell #content .third-col .center img,
-        #shell #content .two-third-col .center img {
-          width: 60%;
-          padding-right: 50px; }
-          @media (max-width: 550px) {
-            #shell #content .half-col .center img,
-            #shell #content .full-col .center img,
-            #shell #content .third-col .center img,
-            #shell #content .two-third-col .center img {
-              padding: 0px;
-              width: 100%; } }
-      #shell #content .half-col h1,
-      #shell #content .full-col h1,
-      #shell #content .third-col h1,
-      #shell #content .two-third-col h1 {
-        font-family: prata, serif;
-        font-size: 16px;
-        font-weight: 400;
-        letter-spacing: 0.03rem;
-        margin: 0rem; }
-        #shell #content .half-col h1.section-head,
-        #shell #content .full-col h1.section-head,
-        #shell #content .third-col h1.section-head,
-        #shell #content .two-third-col h1.section-head {
-          font-size: 28px;
-          padding-bottom: 15px; }
-      #shell #content .half-col h2,
-      #shell #content .full-col h2,
-      #shell #content .third-col h2,
-      #shell #content .two-third-col h2 {
-        font-family: arsenal, helvetica, arial, sans-serif;
-        text-transform: uppercase;
-        font-weight: 400;
-        letter-spacing: 0.05rem;
-        font-size: 10px; }
       #shell #content .half-col h2 a,
       #shell #content .full-col h2 a,
       #shell #content .third-col h2 a,
+      #shell #content .four-col h2 a,
+      #shell #content .five-col h2 a,
+      #shell #content .three-four-col h2 a,
       #shell #content .two-third-col h2 a {
         color: #222222; }
       #shell #content .half-col h2 a:hover,
       #shell #content .full-col h2 a:hover,
       #shell #content .third-col h2 a:hover,
+      #shell #content .four-col h2 a:hover,
+      #shell #content .five-col h2 a:hover,
+      #shell #content .three-four-col h2 a:hover,
       #shell #content .two-third-col h2 a:hover {
-        color: darkgray; }
+        background: #DFFF00;
+        color: #222222; }
+      #shell #content .half-col.end,
+      #shell #content .full-col.end,
+      #shell #content .third-col.end,
+      #shell #content .four-col.end,
+      #shell #content .five-col.end,
+      #shell #content .three-four-col.end,
+      #shell #content .two-third-col.end {
+        border-right: none !important; }
       #shell #content .half-col img,
       #shell #content .full-col img,
       #shell #content .third-col img,
+      #shell #content .four-col img,
+      #shell #content .five-col img,
+      #shell #content .three-four-col img,
       #shell #content .two-third-col img {
-        margin-right: 20px;
         width: 100%;
         height: 100%; }
       #shell #content .half-col.media,
       #shell #content .full-col.media,
       #shell #content .third-col.media,
+      #shell #content .four-col.media,
+      #shell #content .five-col.media,
+      #shell #content .three-four-col.media,
       #shell #content .two-third-col.media {
+        padding: 0;
         margin: 0;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -297,6 +217,9 @@ body {
       #shell #content .half-col.video,
       #shell #content .full-col.video,
       #shell #content .third-col.video,
+      #shell #content .four-col.video,
+      #shell #content .five-col.video,
+      #shell #content .three-four-col.video,
       #shell #content .two-third-col.video {
         margin: 0;
         padding: 0;
@@ -307,32 +230,36 @@ body {
       #shell #content .half-col.embed,
       #shell #content .full-col.embed,
       #shell #content .third-col.embed,
+      #shell #content .four-col.embed,
+      #shell #content .five-col.embed,
+      #shell #content .three-four-col.embed,
       #shell #content .two-third-col.embed {
-        background: white;
-        margin: 20px;
-        margin-bottom: 100px;
-        margin-top: 50px; }
+        background: white; }
       #shell #content .half-col .data-block,
       #shell #content .full-col .data-block,
       #shell #content .third-col .data-block,
+      #shell #content .four-col .data-block,
+      #shell #content .five-col .data-block,
+      #shell #content .three-four-col .data-block,
       #shell #content .two-third-col .data-block {
-        padding-bottom: 15px; }
-        #shell #content .half-col .data-block strong,
-        #shell #content .full-col .data-block strong,
-        #shell #content .third-col .data-block strong,
-        #shell #content .two-third-col .data-block strong {
-          font-weight: 400; }
-          #shell #content .half-col .data-block strong.bold,
-          #shell #content .full-col .data-block strong.bold,
-          #shell #content .third-col .data-block strong.bold,
-          #shell #content .two-third-col .data-block strong.bold {
-            color: #CF4C2D;
-            font-weight: 400; }
+        margin-bottom: 0;
+        padding-bottom: 0; }
+        #shell #content .half-col .data-block strong.bold,
+        #shell #content .full-col .data-block strong.bold,
+        #shell #content .third-col .data-block strong.bold,
+        #shell #content .four-col .data-block strong.bold,
+        #shell #content .five-col .data-block strong.bold,
+        #shell #content .three-four-col .data-block strong.bold,
+        #shell #content .two-third-col .data-block strong.bold {
+          color: #222222;
+          background: #DFFF00; }
         #shell #content .half-col .data-block p,
         #shell #content .full-col .data-block p,
         #shell #content .third-col .data-block p,
+        #shell #content .four-col .data-block p,
+        #shell #content .five-col .data-block p,
+        #shell #content .three-four-col .data-block p,
         #shell #content .two-third-col .data-block p {
-          font-family: arsenal, helvetica, arial, sans-serif;
           margin: 0;
           font-size: 14px;
           letter-spacing: 0.03rem;
@@ -341,16 +268,30 @@ body {
         #shell #content .half-col .data-block a,
         #shell #content .full-col .data-block a,
         #shell #content .third-col .data-block a,
+        #shell #content .four-col .data-block a,
+        #shell #content .five-col .data-block a,
+        #shell #content .three-four-col .data-block a,
         #shell #content .two-third-col .data-block a {
-          color: #222222; }
+          color: #222222;
+          text-transform: uppercase;
+          font-size: 10px;
+          text-decoration: underline; }
           #shell #content .half-col .data-block a:hover,
           #shell #content .full-col .data-block a:hover,
           #shell #content .third-col .data-block a:hover,
+          #shell #content .four-col .data-block a:hover,
+          #shell #content .five-col .data-block a:hover,
+          #shell #content .three-four-col .data-block a:hover,
           #shell #content .two-third-col .data-block a:hover {
-            color: darkgray; }
+            color: #222222;
+            background: #DFFF00;
+            text-decoration: underline; }
         #shell #content .half-col .data-block ol,
         #shell #content .full-col .data-block ol,
         #shell #content .third-col .data-block ol,
+        #shell #content .four-col .data-block ol,
+        #shell #content .five-col .data-block ol,
+        #shell #content .three-four-col .data-block ol,
         #shell #content .two-third-col .data-block ol {
           list-style-type: decimal-leading-zero;
           margin: 0;
@@ -359,30 +300,46 @@ body {
           #shell #content .half-col .data-block ol li,
           #shell #content .full-col .data-block ol li,
           #shell #content .third-col .data-block ol li,
+          #shell #content .four-col .data-block ol li,
+          #shell #content .five-col .data-block ol li,
+          #shell #content .three-four-col .data-block ol li,
           #shell #content .two-third-col .data-block ol li {
-            font-family: arsenal, helvetica, arial, sans-serif;
             padding: 0px;
             padding-left: 5px;
             margin: 0;
             font-size: 12px;
             letter-spacing: 0.03rem;
             line-height: 1.3rem; }
+      #shell #content .half-col h1.section-head,
+      #shell #content .full-col h1.section-head,
+      #shell #content .third-col h1.section-head,
+      #shell #content .four-col h1.section-head,
+      #shell #content .five-col h1.section-head,
+      #shell #content .three-four-col h1.section-head,
+      #shell #content .two-third-col h1.section-head {
+        margin-top: 6px;
+        padding-top: 0px;
+        line-height: 25px;
+        font-family: sporting, sans-serif;
+        letter-spacing: 0.05rem;
+        color: #222222;
+        font-size: 21px;
+        margin-bottom: 10px; }
       #shell #content .half-col h6.section-head,
       #shell #content .full-col h6.section-head,
       #shell #content .third-col h6.section-head,
+      #shell #content .four-col h6.section-head,
+      #shell #content .five-col h6.section-head,
+      #shell #content .three-four-col h6.section-head,
       #shell #content .two-third-col h6.section-head {
-        font-family: arsenal, helvetica, arial, sans-serif;
+        line-height: 15px;
+        font-family: sporting, sans-serif;
         text-transform: uppercase;
-        letter-spacing: 0.05rem;
-        margin-bottom: 0.8rem;
-        font-size: 12px;
-        margin-top: 0.8rem;
-        font-weight: 400; }
-      #shell #content .half-col h6.red,
-      #shell #content .full-col h6.red,
-      #shell #content .third-col h6.red,
-      #shell #content .two-third-col h6.red {
-        color: #222222; }
+        letter-spacing: 0.03rem;
+        color: #222222;
+        font-size: 8px;
+        margin-top: 02px;
+        margin-bottom: 8px; }
     #shell #content .half-col {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
@@ -390,8 +347,9 @@ body {
       -webkit-flex: 0 0 50%;
       width: 50%;
       -webkit-box-sizing: border-box;
-      box-sizing: border-box; }
-      @media (max-width: 768px) {
+      box-sizing: border-box;
+      border-right: 1px solid #222222; }
+      @media (max-width: 550px) {
         #shell #content .half-col {
           -webkit-box-flex: 0;
           -ms-flex: 0 0 100%;
@@ -399,19 +357,78 @@ body {
           -webkit-flex: 0 0 100%;
           width: 100%;
           border-right: none; } }
+      #shell #content .half-col.image {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 450px;
+        padding: 0; }
+        @media (max-width: 550px) {
+          #shell #content .half-col.image {
+            height: 250px; } }
+      #shell #content .half-col#vancity {
+        background-image: url("../img/projects/vancity/vancity.jpg"); }
+      #shell #content .half-col#lena {
+        background-image: url("../img/projects/lena/lena.jpg"); }
+      #shell #content .half-col#touchy {
+        background-image: url("../img/projects/touchy/touchy.jpg"); }
+      #shell #content .half-col#christine {
+        background-image: url("../img/projects/christine/christine.jpg"); }
+      #shell #content .half-col#sjma {
+        background-image: url("../img/projects/sjma/sjma.jpg"); }
+      #shell #content .half-col#japanesehall {
+        background-image: url("../img/projects/japanesehall/japanesehall.jpg"); }
+      #shell #content .half-col#t-vision {
+        background-image: url("../img/projects/touchy/vision.jpeg"); }
+      #shell #content .half-col#me {
+        background-image: url("../img/me.jpg"); }
+      #shell #content .half-col.project-icon {
+        border-right: none; }
+        @media (max-width: 1020px) {
+          #shell #content .half-col.project-icon {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            -webkit-flex: 0 0 50%;
+            width: 50%; } }
+        #shell #content .half-col.project-icon a {
+          text-decoration: none; }
+        #shell #content .half-col.project-icon#right-nav {
+          text-align: right; }
+        #shell #content .half-col.project-icon .project-nav {
+          width: 50px;
+          text-align: center;
+          display: inline-block;
+          margin: 0 10px; }
+          #shell #content .half-col.project-icon .project-nav#top:hover {
+            -webkit-transform: rotate(200deg);
+            -ms-transform: rotate(200deg);
+            transform: rotate(200deg); }
+          #shell #content .half-col.project-icon .project-nav#prev:hover {
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg); }
+          #shell #content .half-col.project-icon .project-nav img {
+            width: 100%;
+            max-width: 40px; }
+          #shell #content .half-col.project-icon .project-nav img:hover {
+            -webkit-transform: rotate(120deg);
+            -ms-transform: rotate(120deg);
+            transform: rotate(120deg); }
       #shell #content .half-col.button {
         margin: 0;
-        height: 40px;
         padding: 0;
-        padding-top: 10px;
         text-align: center;
-        color: black;
-        border-right: none;
-        border-bottom: none; }
+        color: #222222;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.03rem;
+        border-bottom: none;
+        font-family: gangster, helvetica, arial, sans-serif;
+        border-top: 1px solid #222222; }
         #shell #content .half-col.button.active, #shell #content .half-col.button:hover {
-          background: black;
           color: white;
-          cursor: pointer; }
+          background: #222222; }
         #shell #content .half-col.button h4 {
           margin: 0;
           padding: 15px; }
@@ -419,14 +436,13 @@ body {
         list-style-type: decimal-leading-zero;
         margin: 0;
         padding: 0;
-        margin-left: 20px;
-        margin-top: 20px; }
+        margin-left: 20px; }
         #shell #content .half-col ol li {
           padding: 0px;
           padding-left: 5px;
           margin: 0;
           margin-bottom: 10px;
-          font-size: 1px;
+          font-size: 16px;
           letter-spacing: 0.03rem;
           line-height: 1.3rem; }
     #shell #content .white {
@@ -440,56 +456,9 @@ body {
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
       #shell #content .full-col .data-block {
-        padding-right: 50px; }
-      #shell #content .full-col.project-nav #top {
-        cursor: pointer;
-        display: inline;
-        padding-right: 20px; }
-      #shell #content .full-col.project-nav a {
-        display: inline;
-        color: black;
-        text-decoration: none;
-        padding-right: 20px; }
-        #shell #content .full-col.project-nav a:hover p {
-          color: darkgray; }
-      #shell #content .full-col.project-nav p {
-        display: inline;
-        font-family: arsenal, helvetica, arial, sans-serif;
-        text-transform: uppercase;
-        font-size: 10px;
-        letter-spacing: 0.05rem;
-        margin-bottom: 8px;
-        text-align: center; }
+        padding-bottom: 10px; }
       #shell #content .full-col.resume {
-        border-top: 0;
-        cursor: pointer; }
-      #shell #content .full-col.image {
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        height: 500px;
-        padding: 0; }
-        @media (max-width: 550px) {
-          #shell #content .full-col.image {
-            height: 250px; } }
-      #shell #content .full-col#me {
-        background-image: url("../img/me.JPG"); }
-      #shell #content .full-col#gas {
-        background-image: url("../img/photography/splash.jpg"); }
-      #shell #content .full-col#vancity {
-        background-image: url("../img/projects/vancity/vancity.jpg"); }
-      #shell #content .full-col#lena {
-        background-image: url("../img/projects/lena/lena.jpg"); }
-      #shell #content .full-col#touchy {
-        background-image: url("../img/projects/touchy/touchy.jpg"); }
-      #shell #content .full-col#christine {
-        background-image: url("../img/projects/christine/christine.jpg"); }
-      #shell #content .full-col#sjma {
-        background-image: url("../img/projects/sjma/sjma.jpg"); }
-      #shell #content .full-col#japanesehall {
-        background-image: url("../img/projects/japanesehall/japanesehall.jpg"); }
-      #shell #content .full-col#t-vision {
-        background-image: url("../img/projects/touchy/vision.jpeg"); }
+        border-top: 0; }
       #shell #content .full-col.flex {
         padding: 0;
         display: -webkit-box;
@@ -512,9 +481,59 @@ body {
       -ms-flex: 0 0 33.3333%;
       flex: 0 0 33.3333%;
       -webkit-flex: 0 0 33.3333%;
-      width: 33.333333%; }
+      width: 33.333333%;
+      border-right: 1px solid #222222;
+      border-top: 1px solid #222222; }
       @media (max-width: 550px) {
         #shell #content .third-col {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          -webkit-flex: 0 0 100%;
+          width: 100%;
+          border-right: none; } }
+      @media (max-width: 550px) {
+        #shell #content .third-col.none {
+          display: none; } }
+    #shell #content .four-col {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      width: 25%;
+      border-right: 1px solid #222222;
+      border-top: 1px solid #222222; }
+      @media (max-width: 550px) {
+        #shell #content .four-col {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          -webkit-flex: 0 0 100%;
+          width: 100%;
+          border-right: none; } }
+    #shell #content .five-col {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+      width: 20%;
+      border-right: 1px solid #222222;
+      border-top: 1px solid #222222; }
+      @media (max-width: 550px) {
+        #shell #content .five-col {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          -webkit-flex: 0 0 100%;
+          width: 100%;
+          border-right: none; } }
+    #shell #content .three-four-col {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+      flex: 0 0 75%;
+      width: 75%;
+      border-right: 1px solid #222222;
+      border-top: 1px solid #222222; }
+      @media (max-width: 550px) {
+        #shell #content .three-four-col {
           -webkit-box-flex: 0;
           -ms-flex: 0 0 100%;
           flex: 0 0 100%;
@@ -526,7 +545,8 @@ body {
       -ms-flex: 0 0 66.6666%;
       flex: 0 0 66.6666%;
       -webkit-flex: 0 0 66.6666%;
-      width: 66.66666%; }
+      width: 66.66666%;
+      border-top: 1px solid #222222; }
       @media (max-width: 550px) {
         #shell #content .two-third-col {
           -webkit-box-flex: 0;
@@ -541,80 +561,167 @@ body {
           width: 30%;
           margin: 1%;
           height: unset; }
-    #shell #content #landing-hero {
-      width: 100%;
-      margin-bottom: 30px;
-      margin-top: 20px;
-      border-bottom: 1px solid black;
-      padding-left: 20px;
-      padding-right: 20px; }
-      #shell #content #landing-hero h1 {
-        text-align: left;
+    #shell #content .heading {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      width: 100%; }
+      #shell #content .heading p {
         letter-spacing: 0.05rem;
-        font-family: arsenal, helvetica, arial, sans-serif;
+        font-size: 18px; }
+        #shell #content .heading p strong {
+          font-weight: 400; }
+      #shell #content .heading h2 {
+        color: #222222;
+        letter-spacing: 0.03rem;
+        font-size: 34px;
+        margin: 0;
+        margin-bottom: 10px;
+        font-family: sporting, sans-serif;
+        font-weight: 400; }
+        @media (max-width: 1020px) {
+          #shell #content .heading h2 {
+            font-size: 21px; } }
+        #shell #content .heading h2 .caption {
+          font-size: 10px;
+          display: inline;
+          font-family: gangster, helvetica, arial, sans-serif;
+          text-transform: uppercase; }
+      #shell #content .heading h3 {
+        color: #222222;
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+        font-size: 12px;
+        font-weight: normal;
+        margin: 0; }
+    #shell #content #notification {
+      margin-top: 100px;
+      padding-bottom: 50px;
+      padding-left: 150px;
+      border-bottom: 1px solid #222222;
+      width: 100%; }
+      @media (max-width: 1020px) {
+        #shell #content #notification {
+          padding-left: 40px; } }
+      #shell #content #notification h2 {
+        color: #222222;
+        letter-spacing: 0.03rem;
+        font-size: 34px;
+        margin: 0;
+        margin-bottom: 10px;
+        font-family: sporting, sans-serif;
+        font-weight: 400; }
+        @media (max-width: 1020px) {
+          #shell #content #notification h2 {
+            font-size: 21px; } }
+        #shell #content #notification h2 .caption {
+          font-size: 10px;
+          display: inline;
+          font-family: gangster, helvetica, arial, sans-serif;
+          text-transform: uppercase; }
+      #shell #content #notification h3 {
+        color: #222222;
+        letter-spacing: 0.05rem;
+        font-size: 18px;
+        font-weight: normal;
+        margin: 0;
+        font-family: gangster, helvetica, arial, sans-serif;
+        width: 40%; }
+        @media (max-width: 1020px) {
+          #shell #content #notification h3 {
+            width: 80%; } }
+    #shell #content #tags {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      margin-right: 5px;
+      margin-bottom: 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border: 1px solid #222222;
+      border-radius: 25px; }
+      #shell #content #tags h4 {
         font-weight: 400;
         text-transform: uppercase;
-        font-size: 12px;
-        width: 100%;
-        margin-bottom: 0;
-        padding-bottom: 10px;
-        padding-top: 5px; }
-    #shell #content .jh img {
-      opacity: 0.7; }
-      @media (max-width: 768px) {
-        #shell #content .jh img {
-          width: 28%;
-          opacity: 1;
-          z-index: -20; } }
-    #shell #content .jh:hover img {
-      opacity: 1;
-      -webkit-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      transition: all 0.5s ease; }
-      @media (max-width: 768px) {
-        #shell #content .jh:hover img {
-          opacity: 1; } }
-    #shell #content .project-link {
-      text-decoration: none; }
-      #shell #content .project-link:hover img {
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%); }
+        letter-spacing: 0.03rem;
+        font-size: 10px;
+        margin: 0;
+        color: #222222;
+        padding: 6px 15px 6px 15px; }
     #shell #content .project {
-      padding-left: 20px;
-      margin-top: 50px;
-      margin-bottom: 50px; }
-      #shell #content .project img {
-        z-index: -20;
-        width: 30%;
+      height: 150px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      display: -webkit-flex;
+      border-bottom: 1px solid #222222; }
+      #shell #content .project .project-img {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 35%;
+        flex: 0 0 35%;
+        -webkit-flex: 0 0 35%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-right: 1px solid #222222;
         -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        -webkit-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-        padding-right: 10px; }
-        @media (max-width: 768px) {
-          #shell #content .project img {
-            width: 28%;
-            -webkit-filter: none;
-            filter: none; } }
+        filter: grayscale(100%); }
+        @media (max-width: 550px) {
+          #shell #content .project .project-img {
+            display: none; } }
+        #shell #content .project .project-img#vancity-img {
+          background-image: url("../img/thumbnails/vancity.jpg"); }
+        #shell #content .project .project-img#lena-img {
+          background-image: url("../img/thumbnails/lena.jpg"); }
+        #shell #content .project .project-img#sjma-img {
+          background-image: url("../img/thumbnails/sjma.jpg"); }
+        #shell #content .project .project-img#touchy-img {
+          background-image: url("../img/thumbnails/touchy.jpg"); }
+        #shell #content .project .project-img#japanesehall-img {
+          background-image: url("../img/thumbnails/japanesehall.jpg"); }
+        #shell #content .project .project-img#christine-img {
+          background-image: url("../img/thumbnails/christine.jpg"); }
+        #shell #content .project .project-img#visier-img {
+          background-image: url("../img/thumbnails/visier.jpg"); }
       #shell #content .project .project-title {
-        margin-bottom: 20px; }
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+        -webkit-flex: 0 0 80%;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        margin-left: 40px; }
+        #shell #content .project .project-title #tags {
+          margin-bottom: 15px; }
         #shell #content .project .project-title h2 {
-          font-family: prata, serif;
-          font-weight: 400;
+          text-transform: capitalize;
           color: #222222;
           letter-spacing: 0.03rem;
-          font-size: 21px;
+          font-size: 28px;
           margin: 0;
-          margin-bottom: 5px; }
+          margin-bottom: 8px;
+          font-family: sporting, sans-serif;
+          font-weight: 400; }
+          @media (max-width: 1020px) {
+            #shell #content .project .project-title h2 {
+              font-size: 21px; } }
+          @media (max-width: 550px) {
+            #shell #content .project .project-title h2 {
+              font-size: 18px; } }
         #shell #content .project .project-title h3 {
           color: #222222;
-          font-family: arsenal, helvetica, arial, sans-serif;
           text-transform: uppercase;
           letter-spacing: 0.05rem;
           font-size: 12px;
           font-weight: normal;
-          margin: 0; }
+          margin: 0;
+          padding-bottom: 5px; }
+    #shell #content .project-link {
+      text-decoration: none;
+      width: 100%; }
+      #shell #content .project-link:hover .project {
+        background: #DFFF00; }
 
 .center-align {
   position: absolute;
@@ -624,6 +731,11 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
+.center {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px; }
+
 .barba-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -632,3 +744,241 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap; }
+
+@-webkit-keyframes wave {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  to {
+    -webkit-transform: translateY(-25px);
+    transform: translateY(-25px); } }
+
+@keyframes wave {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  to {
+    -webkit-transform: translateY(-25px);
+    transform: translateY(-25px); } }
+
+.wavetext {
+  float: 0 0 100%;
+  width: 100%;
+  margin-top: 40px;
+  text-align: center; }
+  .wavetext p {
+    margin: 0;
+    color: white; }
+
+.wavetext span {
+  display: inline-block;
+  font-size: 14px;
+  font-family: sporting, sans-serif;
+  -webkit-animation-duration: 0.95s;
+  animation-duration: 0.95s;
+  -webkit-animation-name: wave;
+  animation-name: wave;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate; }
+
+.wavetext :nth-child(40n + 0) {
+  -webkit-animation-delay: -1.9s;
+  animation-delay: -1.9s;
+  color: white; }
+
+.wavetext :nth-child(40n + 1) {
+  -webkit-animation-delay: -1.8525s;
+  animation-delay: -1.8525s;
+  color: white; }
+
+.wavetext :nth-child(40n + 2) {
+  -webkit-animation-delay: -1.805s;
+  animation-delay: -1.805s;
+  color: white; }
+
+.wavetext :nth-child(40n + 3) {
+  -webkit-animation-delay: -1.7575s;
+  animation-delay: -1.7575s;
+  color: white; }
+
+.wavetext :nth-child(40n + 4) {
+  -webkit-animation-delay: -1.71s;
+  animation-delay: -1.71s;
+  color: white; }
+
+.wavetext :nth-child(40n + 5) {
+  -webkit-animation-delay: -1.6625s;
+  animation-delay: -1.6625s;
+  color: white; }
+
+.wavetext :nth-child(40n + 6) {
+  -webkit-animation-delay: -1.615s;
+  animation-delay: -1.615s;
+  color: white; }
+
+.wavetext :nth-child(40n + 7) {
+  -webkit-animation-delay: -1.5675s;
+  animation-delay: -1.5675s;
+  color: white; }
+
+.wavetext :nth-child(40n + 8) {
+  -webkit-animation-delay: -1.52s;
+  animation-delay: -1.52s;
+  color: white; }
+
+.wavetext :nth-child(40n + 9) {
+  -webkit-animation-delay: -1.4725s;
+  animation-delay: -1.4725s;
+  color: white; }
+
+.wavetext :nth-child(40n + 10) {
+  -webkit-animation-delay: -1.425s;
+  animation-delay: -1.425s;
+  color: white; }
+
+.wavetext :nth-child(40n + 11) {
+  -webkit-animation-delay: -1.3775s;
+  animation-delay: -1.3775s;
+  color: white; }
+
+.wavetext :nth-child(40n + 12) {
+  -webkit-animation-delay: -1.33s;
+  animation-delay: -1.33s;
+  color: white; }
+
+.wavetext :nth-child(40n + 13) {
+  -webkit-animation-delay: -1.2825s;
+  animation-delay: -1.2825s;
+  color: white; }
+
+.wavetext :nth-child(40n + 14) {
+  -webkit-animation-delay: -1.235s;
+  animation-delay: -1.235s;
+  color: white; }
+
+.wavetext :nth-child(40n + 15) {
+  -webkit-animation-delay: -1.1875s;
+  animation-delay: -1.1875s;
+  color: white; }
+
+.wavetext :nth-child(40n + 16) {
+  -webkit-animation-delay: -1.14s;
+  animation-delay: -1.14s;
+  color: white; }
+
+.wavetext :nth-child(40n + 17) {
+  -webkit-animation-delay: -1.0925s;
+  animation-delay: -1.0925s;
+  color: white; }
+
+.wavetext :nth-child(40n + 18) {
+  -webkit-animation-delay: -1.045s;
+  animation-delay: -1.045s;
+  color: white; }
+
+.wavetext :nth-child(40n + 19) {
+  -webkit-animation-delay: -0.9975s;
+  animation-delay: -0.9975s;
+  color: white; }
+
+.wavetext :nth-child(40n + 20) {
+  -webkit-animation-delay: -0.95s;
+  animation-delay: -0.95s;
+  color: white; }
+
+.wavetext :nth-child(40n + 21) {
+  -webkit-animation-delay: -0.9025s;
+  animation-delay: -0.9025s;
+  color: white; }
+
+.wavetext :nth-child(40n + 22) {
+  -webkit-animation-delay: -0.855s;
+  animation-delay: -0.855s;
+  color: white; }
+
+.wavetext :nth-child(40n + 23) {
+  -webkit-animation-delay: -0.8075s;
+  animation-delay: -0.8075s;
+  color: white; }
+
+.wavetext :nth-child(40n + 24) {
+  -webkit-animation-delay: -0.76s;
+  animation-delay: -0.76s;
+  color: white; }
+
+.wavetext :nth-child(40n + 25) {
+  -webkit-animation-delay: -0.7125s;
+  animation-delay: -0.7125s;
+  color: white; }
+
+.wavetext :nth-child(40n + 26) {
+  -webkit-animation-delay: -0.665s;
+  animation-delay: -0.665s;
+  color: white; }
+
+.wavetext :nth-child(40n + 27) {
+  -webkit-animation-delay: -0.6175s;
+  animation-delay: -0.6175s;
+  color: white; }
+
+.wavetext :nth-child(40n + 28) {
+  -webkit-animation-delay: -0.57s;
+  animation-delay: -0.57s;
+  color: white; }
+
+.wavetext :nth-child(40n + 29) {
+  -webkit-animation-delay: -0.5225s;
+  animation-delay: -0.5225s;
+  color: white; }
+
+.wavetext :nth-child(40n + 30) {
+  -webkit-animation-delay: -0.475s;
+  animation-delay: -0.475s;
+  color: white; }
+
+.wavetext :nth-child(40n + 31) {
+  -webkit-animation-delay: -0.4275s;
+  animation-delay: -0.4275s;
+  color: white; }
+
+.wavetext :nth-child(40n + 32) {
+  -webkit-animation-delay: -0.38s;
+  animation-delay: -0.38s;
+  color: white; }
+
+.wavetext :nth-child(40n + 33) {
+  -webkit-animation-delay: -0.3325s;
+  animation-delay: -0.3325s;
+  color: white; }
+
+.wavetext :nth-child(40n + 34) {
+  -webkit-animation-delay: -0.285s;
+  animation-delay: -0.285s;
+  color: white; }
+
+.wavetext :nth-child(40n + 35) {
+  -webkit-animation-delay: -0.2375s;
+  animation-delay: -0.2375s;
+  color: white; }
+
+.wavetext :nth-child(40n + 36) {
+  -webkit-animation-delay: -0.19s;
+  animation-delay: -0.19s;
+  color: white; }
+
+.wavetext :nth-child(40n + 37) {
+  -webkit-animation-delay: -0.1425s;
+  animation-delay: -0.1425s;
+  color: white; }
+
+.wavetext :nth-child(40n + 38) {
+  -webkit-animation-delay: -0.095s;
+  animation-delay: -0.095s;
+  color: white; }
+
+.wavetext :nth-child(40n + 39) {
+  -webkit-animation-delay: -0.0475s;
+  animation-delay: -0.0475s;
+  color: white; }

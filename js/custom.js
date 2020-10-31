@@ -15,6 +15,7 @@ $(function () {
         });
 
     });
+
     //Smooth scroll to top
     $("#barba-wrapper").on("click", "#top", function () {
         $("#content").animate({
@@ -22,28 +23,45 @@ $(function () {
         }, 1000);
     });
 
+
+
     var ww = $(window).innerWidth();
 
-    $(document).on("click", ".nav-link", function () {
+    //    $(document).on("click", ".nav-link", function () {
+    //
+    //        if (ww <= 768) {
+    //            $("#sidebar").fadeOut();
+    //            $(this).html("&#8801;");
+    //            $(this).removeClass("active");
+    //        }
+    //    });
+    //
+    //    $(document).on("click", "#menu", function () {
+    //        if ($(this).hasClass("active")) {
+    //            $("#sidebar").fadeOut();
+    //            $(this).html("&#8801;");
+    //            $(this).removeClass("active");
+    //        } else {
+    //            $("#sidebar").fadeIn();
+    //            $(this).addClass("active");
+    //            $(this).html("&times;");
+    //
+    //        }
+    //    });
 
-        if (ww <= 768) {
-            $("#sidebar").fadeOut();
-            $(this).removeClass("active");
-        }
-    });
 
-    $(document).on("click", "#menu", function () {
-        if ($(this).hasClass("active")) {
-            $("#sidebar").fadeOut();
-            $(this).html("MENU");
-            $(this).removeClass("active");
+    //wavy text
+    var text = "Enjoy Your Stay";
+
+
+    for (var i in text) {
+        if (text[i] === "") {
+            $(".one").append($("<span>").html("&nbsp;"));
         } else {
-            $("#sidebar").fadeIn();
-            $(this).addClass("active");
-            $(this).html("CLOSE");
-
+            $(".one").append($("<span>").text(text[i]));
         }
-    });
+    }
+
 
 
 
@@ -124,10 +142,6 @@ $(function () {
     };
 
     Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, container) {
-
-
-
-
 
     });
 

@@ -1,16 +1,22 @@
 $grey:#f8f8f8;
+$blue:#0000FF;
+$red:#D21930;
 $black: #222222;
-$blue: #222222;
-$red: #222222;
-$white: #FFFFFF;
+$chartreuse: #DFFF00;
 
-$font1: arsenal,
+
+$fonts: gangster,
 helvetica,
 arial,
 sans-serif;
 
-$font2: prata,
-serif;
+$fonts2: sporting,
+sans-serif;
+
+//$fonts3: terminal,
+//sans-serif;
+
+
 /*********************
 BREAKPOINTS
 *********************/
@@ -27,7 +33,7 @@ BREAKPOINTS
         }
     }
     @else if $point==tablet {
-        @media (max-width: 768px) {
+        @media (max-width: 1020px) {
             @content ;
         }
     }
