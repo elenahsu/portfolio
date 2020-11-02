@@ -255,7 +255,7 @@ body {
       #shell #content .three-four-col .data-block,
       #shell #content .two-third-col .data-block {
         margin-bottom: 0;
-        padding-bottom: 0; }
+        padding-bottom: 3px; }
         #shell #content .half-col .data-block strong.bold,
         #shell #content .full-col .data-block strong.bold,
         #shell #content .third-col .data-block strong.bold,
