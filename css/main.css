@@ -378,6 +378,8 @@ body {
         @media (max-width: 550px) {
           #shell #content .half-col.image {
             height: 250px; } }
+      #shell #content .half-col#visier {
+        background-image: url("../img/projects/visier/visier.jpg"); }
       #shell #content .half-col#vancity {
         background-image: url("../img/projects/vancity/vancity.jpg"); }
       #shell #content .half-col#lena {
