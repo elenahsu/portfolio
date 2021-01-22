@@ -276,6 +276,11 @@ body {
             &.embed {
                 background: white;
             }
+            .wavy {
+                text-decoration: underline;
+                text-decoration-style: wavy;
+                text-decoration-color: $chartreuse;
+            }
 
 
             .data-block {
@@ -298,6 +303,7 @@ body {
                     line-height: 1.3rem;
                     padding-bottom: 0rem;
                 }
+
 
                 a {
                     color: $black;

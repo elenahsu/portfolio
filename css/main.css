@@ -247,6 +247,18 @@ body {
       #shell #content .three-four-col.embed,
       #shell #content .two-third-col.embed {
         background: white; }
+      #shell #content .half-col .wavy,
+      #shell #content .full-col .wavy,
+      #shell #content .third-col .wavy,
+      #shell #content .four-col .wavy,
+      #shell #content .five-col .wavy,
+      #shell #content .three-four-col .wavy,
+      #shell #content .two-third-col .wavy {
+        text-decoration: underline;
+        -webkit-text-decoration-style: wavy;
+        text-decoration-style: wavy;
+        -webkit-text-decoration-color: #DFFF00;
+        text-decoration-color: #DFFF00; }
       #shell #content .half-col .data-block,
       #shell #content .full-col .data-block,
       #shell #content .third-col .data-block,
