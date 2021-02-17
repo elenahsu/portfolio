@@ -255,6 +255,7 @@ body {
       #shell #content .three-four-col .wavy,
       #shell #content .two-third-col .wavy {
         text-decoration: underline;
+        display: inline;
         -webkit-text-decoration-style: wavy;
         text-decoration-style: wavy;
         -webkit-text-decoration-color: #DFFF00;
@@ -276,7 +277,8 @@ body {
         #shell #content .three-four-col .data-block strong.bold,
         #shell #content .two-third-col .data-block strong.bold {
           color: #222222;
-          background: #DFFF00; }
+          background: #DFFF00;
+          font-weight: 400; }
         #shell #content .half-col .data-block p,
         #shell #content .full-col .data-block p,
         #shell #content .third-col .data-block p,
@@ -673,7 +675,7 @@ body {
         font-size: 10px;
         margin: 0;
         color: #222222;
-        padding: 6px 15px 6px 15px; }
+        padding: 4px 10px 4px 10px; }
     #shell #content .project {
       height: 150px;
       display: -webkit-box;

@@ -278,6 +278,7 @@ body {
             }
             .wavy {
                 text-decoration: underline;
+                display: inline;
                 text-decoration-style: wavy;
                 text-decoration-color: $chartreuse;
             }
@@ -288,10 +289,10 @@ body {
                 padding-bottom: 3px;
                 ;
                 strong {
-
                     &.bold {
                         color: $black;
                         background: $chartreuse;
+                        font-weight: 400;
                     }
                 }
 
@@ -789,7 +790,7 @@ body {
                 font-size: 10px;
                 margin: 0;
                 color: $black;
-                padding: 6px 15px 6px 15px;
+                padding: 4px 10px 4px 10px;
             }
         }
 
