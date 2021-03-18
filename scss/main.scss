@@ -726,13 +726,11 @@ body {
 
         #notification {
 
-            margin-top: 100px;
-            padding-bottom: 50px;
-            padding-left: 150px;
+            margin-top: 120px;
+            padding-bottom: 90px;
+            padding-left: 140px;
             border-bottom: 1px solid $black;
             width: 100%;
-
-
             @include break (tablet) {
                 padding-left: 40px;
             }
@@ -764,7 +762,7 @@ body {
                 font-weight: normal;
                 margin: 0;
                 font-family: $fonts;
-                width: 40%;
+                width: 400px;
                 @include break (tablet) {
                     width: 80%;
                 }
@@ -775,7 +773,7 @@ body {
         #tags {
             flex: 0 0 50%;
             margin-right: 5px;
-            margin-bottom: 25px;
+            margin-bottom: 10px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
@@ -859,6 +857,7 @@ body {
 
                 #tags {
                     margin-bottom: 15px;
+
                 }
                 h2 {
                     text-transform: capitalize;

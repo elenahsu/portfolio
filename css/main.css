@@ -622,9 +622,9 @@ body {
         font-weight: normal;
         margin: 0; }
     #shell #content #notification {
-      margin-top: 100px;
-      padding-bottom: 50px;
-      padding-left: 150px;
+      margin-top: 120px;
+      padding-bottom: 90px;
+      padding-left: 140px;
       border-bottom: 1px solid #222222;
       width: 100%; }
       @media (max-width: 1020px) {
@@ -653,7 +653,7 @@ body {
         font-weight: normal;
         margin: 0;
         font-family: gangster, helvetica, arial, sans-serif;
-        width: 40%; }
+        width: 400px; }
         @media (max-width: 1020px) {
           #shell #content #notification h3 {
             width: 80%; } }
@@ -662,7 +662,7 @@ body {
       -ms-flex: 0 0 50%;
       flex: 0 0 50%;
       margin-right: 5px;
-      margin-bottom: 25px;
+      margin-bottom: 10px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
