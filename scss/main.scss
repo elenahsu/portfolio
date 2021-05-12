@@ -447,8 +447,28 @@ body {
                 }
 
 
+                p {
+                    margin: 0;
+                    display: inline;
+                    font-size: 10px;
+                    letter-spacing: 0.03rem;
+                    line-height: 1.3rem;
+                    padding-bottom: 0rem;
+
+
+                }
+
+
                 a {
-                    text-decoration: none;
+                    color: $black;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    text-decoration: underline;
+                    &:hover {
+                        color: $black;
+                        background: $chartreuse;
+                        text-decoration: underline;
+                    }
                 }
 
 
@@ -462,33 +482,6 @@ body {
                     text-align: center;
                     display: inline-block;
                     margin: 0 10px; //                    cursor: none;
-                    &#top:hover {
-                        transform: rotate(200deg);
-                    }
-
-                    &#prev:hover {
-                        transform: rotate(90deg);
-                    }
-
-                    img {
-                        width: 100%;
-                        max-width: 40px;
-                    }
-
-                    img:hover {
-                        -webkit-transform: rotate(120deg);
-                        transform: rotate(120deg);
-                    } //                    p {
-                    //                        margin: 0;
-                    //                        font-family: $fonts;
-                    //                        margin-top: 10px;
-                    //                        font-size: 10px;
-                    //                        text-decoration: underline;
-                    //                        text-transform: uppercase;
-                    //                        color: $black;
-                    //                        letter-spacing: 0.03rem;
-                    //
-                    //                    }
                 }
 
             }

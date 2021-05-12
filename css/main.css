@@ -419,8 +419,22 @@ body {
             flex: 0 0 50%;
             -webkit-flex: 0 0 50%;
             width: 50%; } }
+        #shell #content .half-col.project-icon p {
+          margin: 0;
+          display: inline;
+          font-size: 10px;
+          letter-spacing: 0.03rem;
+          line-height: 1.3rem;
+          padding-bottom: 0rem; }
         #shell #content .half-col.project-icon a {
-          text-decoration: none; }
+          color: #222222;
+          text-transform: uppercase;
+          font-size: 12px;
+          text-decoration: underline; }
+          #shell #content .half-col.project-icon a:hover {
+            color: #222222;
+            background: #DFFF00;
+            text-decoration: underline; }
         #shell #content .half-col.project-icon#right-nav {
           text-align: right; }
         #shell #content .half-col.project-icon .project-nav {
@@ -428,21 +442,6 @@ body {
           text-align: center;
           display: inline-block;
           margin: 0 10px; }
-          #shell #content .half-col.project-icon .project-nav#top:hover {
-            -webkit-transform: rotate(200deg);
-            -ms-transform: rotate(200deg);
-            transform: rotate(200deg); }
-          #shell #content .half-col.project-icon .project-nav#prev:hover {
-            -webkit-transform: rotate(90deg);
-            -ms-transform: rotate(90deg);
-            transform: rotate(90deg); }
-          #shell #content .half-col.project-icon .project-nav img {
-            width: 100%;
-            max-width: 40px; }
-          #shell #content .half-col.project-icon .project-nav img:hover {
-            -webkit-transform: rotate(120deg);
-            -ms-transform: rotate(120deg);
-            transform: rotate(120deg); }
       #shell #content .half-col.button {
         margin: 0;
         padding: 0;
