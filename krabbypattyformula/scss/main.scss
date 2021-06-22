@@ -649,10 +649,6 @@ body {
 
 
 
-        &#me {
-            background-image: url("../img/me.jpg");
-
-        }
 
 
 
@@ -680,7 +676,7 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 66.66%;
+        width: 100%;
     }
 
     .project-nav {
@@ -718,6 +714,14 @@ body {
             -webkit-flex: 0 0 100%;
             width: 100%;
             border-right: none;
+        }
+
+
+        &#me {
+            background-image: url("../img/me.jpg");
+            margin-top: 100px;
+            margin-left: 10px;
+
         }
 
         &.none {

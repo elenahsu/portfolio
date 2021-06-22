@@ -506,8 +506,6 @@ body {
       background-image: url("../img/projects/japanesehall/japanesehall.jpg"); }
     #content .full-col#t-vision {
       background-image: url("../img/projects/touchy/vision.jpeg"); }
-    #content .full-col#me {
-      background-image: url("../img/me.jpg"); }
   #content .flex {
     padding: 0;
     display: -webkit-box;
@@ -535,7 +533,7 @@ body {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 66.66%; }
+    width: 100%; }
   #content .project-nav #left-nav {
     float: left;
     text-align: left; }
@@ -565,6 +563,10 @@ body {
         -webkit-flex: 0 0 100%;
         width: 100%;
         border-right: none; } }
+    #content .third-col#me {
+      background-image: url("../img/me.jpg");
+      margin-top: 100px;
+      margin-left: 10px; }
     @media (max-width: 550px) {
       #content .third-col.none {
         display: none; } }
