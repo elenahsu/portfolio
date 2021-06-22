@@ -525,6 +525,17 @@ body {
         display: -ms-flexbox;
         display: flex;
         display: -webkit-flex; }
+  #content .full-width {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 66.66%; }
   #content .project-nav #left-nav {
     float: left;
     text-align: left; }
@@ -592,15 +603,22 @@ body {
         -webkit-flex: 0 0 100%;
         width: 100%;
         border-right: none; } }
+  #content .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 66%; }
   #content .gallery-col {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 33%;
     flex: 0 0 33%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    -webkit-flex: 0 0 100%;
-    flex: 0 0 100%;
-    -webkit-flex: 0 0 100%;
+    -webkit-flex: 0 0 33%;
     width: 33%; }
     @media (max-width: 550px) {
       #content .gallery-col {
@@ -716,6 +734,17 @@ body {
   margin-right: 150px;
   width: 100%;
   height: 100%; }
+  .barba-container .full-width-index {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%; }
   @media (max-width: 1020px) {
     .barba-container {
       margin-left: 30px;
