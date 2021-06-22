@@ -110,7 +110,7 @@ body {
     #content #footer li a:hover,
     #content #footer a:active {
       background: #DFFF00;
-      color: white; }
+      color: #222222; }
   #content #fun {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
