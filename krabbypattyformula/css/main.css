@@ -84,7 +84,7 @@ body {
     background: #222222;
     letter-spacing: 0.03rem;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 12px;
     padding-bottom: 05px;
     padding-left: 150px;
     padding-right: 150px; }
@@ -254,7 +254,7 @@ body {
       #content .gallery-col .data-block a {
         color: #222222;
         text-transform: uppercase;
-        font-size: 10px;
+        font-size: 12px;
         text-decoration: underline; }
         #content .half-col .data-block a:hover,
         #content .full-col .data-block a:hover,
@@ -328,7 +328,7 @@ body {
       text-decoration: underline;
       -webkit-text-decoration-style: wavy;
       text-decoration-style: wavy;
-      font-size: 10px;
+      font-size: 12px;
       margin-top: 0px;
       margin-bottom: 10px; }
   #content .end {
@@ -448,7 +448,7 @@ body {
       #content .half-col.project-icon p {
         margin: 0;
         display: inline;
-        font-size: 10px;
+        font-size: 12px;
         letter-spacing: 0.03rem;
         line-height: 1.3rem;
         padding-bottom: 0rem; }
@@ -644,7 +644,7 @@ body {
         #content .heading h2 {
           font-size: 21px; } }
       #content .heading h2 .caption {
-        font-size: 10px;
+        font-size: 12px;
         display: inline;
         font-family: gangster, helvetica, arial, sans-serif;
         text-transform: uppercase; }
@@ -696,7 +696,7 @@ body {
       #content #notification h3 a {
         color: #222222;
         text-transform: uppercase;
-        font-size: 10px;
+        font-size: 12px;
         text-decoration: underline; }
       #content #notification h3 a:hover {
         color: #222222;
