@@ -168,7 +168,8 @@ body {
     #content .third-col img,
     #content .five-col img,
     #content .gallery-col img {
-      width: 100%; }
+      width: 100%;
+      border: 1px solid #222222; }
     #content .half-col.media,
     #content .full-col.media,
     #content .third-col.media,
@@ -183,15 +184,17 @@ body {
     #content .third-col .desktop,
     #content .five-col .desktop,
     #content .gallery-col .desktop {
-      width: 100%; }
+      width: 100%;
+      border: 1px solid #222222; }
     #content .half-col video,
     #content .full-col video,
     #content .third-col video,
     #content .five-col video,
     #content .gallery-col video {
+      border: 1px solid #222222;
       width: 60%;
       margin: 0;
-      padding-top: 25px;
+      margin-top: 25px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -208,6 +211,7 @@ body {
     #content .third-col.embed,
     #content .five-col.embed,
     #content .gallery-col.embed {
+      border: 1px solid #222222;
       background: white; }
     #content .half-col .wavy,
     #content .full-col .wavy,
@@ -328,9 +332,10 @@ body {
       text-decoration: underline;
       -webkit-text-decoration-style: wavy;
       text-decoration-style: wavy;
+      text-underline-offset: 3px;
       font-size: 12px;
       margin-top: 0px;
-      margin-bottom: 10px; }
+      margin-bottom: 15px; }
   #content .end {
     border-top: solid 1px #222222; }
   #content .project {
@@ -347,6 +352,7 @@ body {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
+      border: 1px solid #222222;
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%); }
       #content .project .project-img#vancity-img {
@@ -493,18 +499,24 @@ body {
         width: 100%;
         border-right: none; } }
     #content .full-col#visier {
+      border: 1px solid #222222;
       background-image: url("../img/projects/visier/visier.jpg"); }
     #content .full-col#vancity {
+      border: 1px solid #222222;
       background-image: url("../img/projects/vancity/vancity.jpg"); }
     #content .full-col#lena {
+      border: 1px solid #222222;
       background-image: url("../img/projects/lena/lena.jpg"); }
     #content .full-col#touchy {
       background-image: url("../img/projects/touchy/touchy.jpg"); }
     #content .full-col#christine {
+      border: 1px solid #222222;
       background-image: url("../img/projects/christine/christine.jpg"); }
     #content .full-col#sjma {
+      border: 1px solid #222222;
       background-image: url("../img/projects/sjma/sjma.jpg"); }
     #content .full-col#japanesehall {
+      border: 1px solid #222222;
       background-image: url("../img/projects/japanesehall/japanesehall.jpg"); }
     #content .full-col#t-vision {
       background-image: url("../img/projects/touchy/vision.jpeg"); }

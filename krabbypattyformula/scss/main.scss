@@ -235,7 +235,7 @@ body {
 
         img {
             width: 100%;
-
+            border: 1px solid $black;
         }
 
         &.media {
@@ -245,13 +245,14 @@ body {
         }
         .desktop {
             width: 100%;
+            border: 1px solid $black;
         }
 
         & video {
-
+            border: 1px solid $black;
             width: 60%;
             margin: 0;
-            padding-top: 25px;
+            margin-top: 25px;
             display: flex;
             display: -webkit-flex;
 
@@ -261,6 +262,7 @@ body {
         }
 
         &.embed {
+            border: 1px solid $black;
             background: white;
         }
         .wavy {
@@ -372,10 +374,11 @@ body {
                 letter-spacing: 0.03rem;
                 text-decoration: underline;
                 text-decoration-style: wavy;
+                text-underline-offset: 3px;
                 font-size: 12px;
 
                 margin-top: 0px;
-                margin-bottom: 10px;
+                margin-bottom: 15px;
 
             }
 
@@ -401,7 +404,7 @@ body {
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
-
+            border: 1px solid $black;
 
             filter: grayscale(100%); //            @include break (mobile) {
             //                display: none;
@@ -624,15 +627,19 @@ body {
             border-right: none;
         }
 
+
         &#visier {
+            border: 1px solid $black;
             background-image: url("../img/projects/visier/visier.jpg");
         }
 
         &#vancity {
+            border: 1px solid $black;
             background-image: url("../img/projects/vancity/vancity.jpg");
         }
 
         &#lena {
+            border: 1px solid $black;
             background-image: url("../img/projects/lena/lena.jpg");
         }
 
@@ -641,14 +648,17 @@ body {
         }
 
         &#christine {
+            border: 1px solid $black;
             background-image: url("../img/projects/christine/christine.jpg")
         }
 
         &#sjma {
+            border: 1px solid $black;
             background-image: url("../img/projects/sjma/sjma.jpg")
         }
 
         &#japanesehall {
+            border: 1px solid $black;
             background-image: url("../img/projects/japanesehall/japanesehall.jpg")
         }
 
@@ -801,33 +811,9 @@ body {
             -webkit-flex: 0 0 100%;
             width: 100%;
             border-right: none;
-
         }
+    }
 
-
-
-    } //    .two-third-col {
-    //        flex: 0 0 66.6666%;
-    //        -webkit-flex: 0 0 66.6666%;
-    //        width: 66.66666%; //        border-top: 1px solid $black;
-    //        @include break(mobile) {
-    //            flex: 0 0 100%;
-    //            -webkit-flex: 0 0 100%;
-    //            width: 100%;
-    //            border-right: none;
-    //        }
-    //
-    //
-    //        &.gallery {
-    //            padding: 1%;
-    //            .gallery-image {
-    //                width: 30%;
-    //                margin: 1%;
-    //                height: unset;
-    //            }
-    //        }
-    //
-    //    }
     .heading {
         margin-top: 150px;
         margin-bottom: 20px;
