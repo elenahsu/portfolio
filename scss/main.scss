@@ -403,9 +403,7 @@ body {
             height: 150px;
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: center center;
-//            border: 1px solid $black;
-
+            background-position: center center; //            border: 1px solid $black;
             filter: grayscale(100%); //            @include break (mobile) {
             //                display: none;
             //
@@ -777,7 +775,7 @@ body {
         color: $black;
         margin-top: 45px;
         margin-right: 15px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         font-family: $fonts; //        border-radius: 50px;
         border: 1px solid $black;
 
