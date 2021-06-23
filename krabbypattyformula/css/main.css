@@ -293,18 +293,17 @@ body {
     #content .third-col h2.section-head,
     #content .five-col h2.section-head,
     #content .gallery-col h2.section-head {
-      font-size: 18px;
-      margin-bottom: 5px; }
+      font-size: 20px;
+      margin-bottom: 10px; }
     #content .half-col h1.section-head,
     #content .full-col h1.section-head,
     #content .third-col h1.section-head,
     #content .five-col h1.section-head,
     #content .gallery-col h1.section-head {
-      line-height: 24px;
       font-family: sporting, sans-serif;
       letter-spacing: 0.05rem;
       color: #222222;
-      font-size: 16px;
+      font-size: 20px;
       margin-bottom: 10px; }
     #content .half-col h3.section-head,
     #content .full-col h3.section-head,
@@ -319,7 +318,7 @@ body {
       font-weight: normal;
       margin: 0;
       padding-top: 0px;
-      padding-bottom: 35px; }
+      padding-bottom: 25px; }
     #content .half-col h6.section-head,
     #content .full-col h6.section-head,
     #content .third-col h6.section-head,
@@ -335,7 +334,7 @@ body {
       text-underline-offset: 3px;
       font-size: 12px;
       margin-top: 0px;
-      margin-bottom: 15px; }
+      margin-bottom: 25px; }
   #content .end {
     border-top: solid 1px #222222; }
   #content .project {
@@ -577,6 +576,8 @@ body {
         -webkit-flex: 0 0 100%;
         width: 100%;
         border-right: none; } }
+    #content .third-col img {
+      border: none; }
     #content .third-col#me {
       background-image: url("../img/me.jpg");
       margin-top: 100px;
@@ -590,19 +591,20 @@ body {
     text-align: center;
     color: #222222;
     margin-top: 45px;
-    margin-right: 10px;
+    margin-right: 15px;
+    margin-bottom: 20px;
     font-family: gangster, helvetica, arial, sans-serif;
-    border-radius: 50px;
     border: 1px solid #222222;
     display: inline-block; }
     #content .button.active, #content .button:hover {
       color: #222222;
-      background: #DFFF00; }
+      background: #DFFF00;
+      cursor: pointer; }
     #content .button h4 {
       margin: 0;
       padding: 10px;
-      padding-right: 20px;
-      padding-left: 20px;
+      padding-right: 50px;
+      padding-left: 50px;
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 0.03rem; }
