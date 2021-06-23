@@ -774,7 +774,7 @@ body {
         text-align: center;
         color: $black;
         margin-top: 45px;
-        margin-right: 15px;
+        margin-right: 10px;
         margin-bottom: 25px;
         font-family: $fonts; //        border-radius: 50px;
         border: 1px solid $black;
@@ -786,18 +786,25 @@ body {
             background: $chartreuse;
             cursor: pointer;
         }
+
+
         h4 {
             margin: 0;
             padding: 10px;
-            padding-right: 50px;
-            padding-left: 50px;
+            padding-right: 45px;
+            padding-left: 45px;
             font-size: 12px;
+
             text-transform: uppercase;
 
 
             letter-spacing: 0.03rem;
 
+            @include break (mobile) {
+                padding-right: 30px;
 
+                padding-left: 30px;
+            }
         }
     }
     .five-col {

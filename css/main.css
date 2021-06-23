@@ -581,7 +581,7 @@ body {
     text-align: center;
     color: #222222;
     margin-top: 45px;
-    margin-right: 15px;
+    margin-right: 10px;
     margin-bottom: 25px;
     font-family: gangster, helvetica, arial, sans-serif;
     border: 1px solid #222222;
@@ -593,11 +593,15 @@ body {
     #content .button h4 {
       margin: 0;
       padding: 10px;
-      padding-right: 50px;
-      padding-left: 50px;
+      padding-right: 45px;
+      padding-left: 45px;
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 0.03rem; }
+      @media (max-width: 550px) {
+        #content .button h4 {
+          padding-right: 30px;
+          padding-left: 30px; } }
   #content .five-col {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 20%;
