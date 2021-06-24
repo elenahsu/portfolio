@@ -403,7 +403,8 @@ body {
             height: 150px;
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: center center; //            border: 1px solid $black;
+            background-position: center center;
+            border: 1px solid $black;
             filter: grayscale(100%); //            @include break (mobile) {
             //                display: none;
             //
