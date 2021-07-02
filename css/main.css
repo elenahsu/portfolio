@@ -590,6 +590,7 @@ body {
     #content .button.active, #content .button:hover {
       color: #222222;
       background: #DFFF00;
+      border: 1px solid #222222;
       cursor: pointer; }
     #content .button h4 {
       margin: 0;

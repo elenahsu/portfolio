@@ -777,15 +777,19 @@ body {
         margin-top: 45px;
         margin-right: 10px;
         margin-bottom: 25px;
-        font-family: $fonts; //        border-radius: 50px;
-        border: 1px solid $black;
+        font-family: $fonts;
+//        border-radius: 50px;
 
+        border: 1px solid $black;
         display: inline-block;
         &.active,
         &:hover {
             color: $black;
             background: $chartreuse;
-            cursor: pointer;
+            border: 1px solid $black;
+            cursor: pointer; //            h4 {
+            //                text-decoration: underline;
+            //            }
         }
 
 
