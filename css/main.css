@@ -18,6 +18,18 @@ body {
   overflow: hidden;
   position: relative; }
 
+::-moz-selection {
+  background: #DFFF00;
+  /* WebKit/Blink Browsers */ }
+
+::selection {
+  background: #DFFF00;
+  /* WebKit/Blink Browsers */ }
+
+::-moz-selection {
+  background: #DFFF00;
+  /* Gecko Browsers */ }
+
 #content {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 100%;
