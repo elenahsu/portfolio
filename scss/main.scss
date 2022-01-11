@@ -115,8 +115,7 @@ body {
     }
 
     #footer {
-        //        flex: 0 0 100%;
-        //        width: 100%;
+
         margin-top: 65px; //110-45
         padding-top: 15px;
         background: $black;
@@ -124,6 +123,8 @@ body {
         text-transform: uppercase;
         font-size: 12px;
         padding-bottom: 05px;
+        bottom: 0;
+
         padding-left: 150px;
         padding-right: 150px;
         @include break (tablet) {
@@ -240,7 +241,18 @@ body {
             color: $black; //                cursor: none;
         }
 
+        h4 {
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 1.2rem;
+            letter-spacing: 0.03rem;
+            padding-bottom: 10px;
+            margin: 0;
+            font-size: 12px;
 
+            color: $black;
+
+        }
 
         img {
             width: 100%;
