@@ -31,6 +31,17 @@ body {
   /* Gecko Browsers */ }
 
 #content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
@@ -92,12 +103,12 @@ body {
           background: #DFFF00; }
   #content #footer {
     margin-top: 65px;
-    padding-top: 15px;
+    padding-top: 8px;
     background: #222222;
     letter-spacing: 0.03rem;
     text-transform: uppercase;
     font-size: 12px;
-    padding-bottom: 05px;
+    padding-bottom: 8px;
     bottom: 0;
     padding-left: 150px;
     padding-right: 150px; }
