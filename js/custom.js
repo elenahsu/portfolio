@@ -61,7 +61,16 @@ $(function () {
             $(".one").append($("<span>").text(text[i]));
         }
     }
-
+    
+//    var text = "Coming Soon";
+//    for (var i in text) {
+//        if (text[i] === "") {
+//            $(".two").append($("<span>").html("&nbsp;"));
+//        } else {
+//            $(".two").append($("<span>").text(text[i]));
+//        }
+//    }
+//
 
 
 

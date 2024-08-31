@@ -59,6 +59,7 @@ body {
         @include break (tablet) {
             width: 100%;
 
+
         }
 
 
@@ -92,6 +93,7 @@ body {
             margin-left: 110px;
             @include break(tablet) {
                 margin-left: 0px;
+       
                 margin-right: 0px;
             }
             ul {
@@ -255,6 +257,12 @@ body {
             color: $black;
 
         }
+        
+         .coming {
+            color:blue;
+            font-weight: bold;
+            padding-top:4px;
+        }
 
         img {
             width: 100%;
@@ -353,8 +361,11 @@ body {
         h2 {
             &.section-head {
                 font-size: 20px;
-
                 margin-bottom: 10px;
+                a{
+                  text-decoration: none;
+                    border-bottom: 1px solid black;
+                }
 
             }
         }
@@ -399,10 +410,10 @@ body {
                 text-decoration: underline;
                 text-decoration-style: wavy;
                 text-underline-offset: 3px;
-                font-size: 12px;
+                font-size: 10px;
 
                 margin-top: 0px;
-                margin-bottom: 25px;
+                margin-bottom: 20px;
 
             }
 
@@ -413,6 +424,7 @@ body {
 
     .end {
         border-top: solid 1px $black;
+
     }
     .project {
 
@@ -461,6 +473,25 @@ body {
 
             &#visier-img {
                 background-image: url("../img/thumbnails/visier.jpg");
+
+            }
+            
+              &#ocss-img {
+                background-image: url("../img/thumbnails/ocss.jpg");
+
+            }      &#skillsreading-img {
+                background-image: url("../img/thumbnails/skillsreading.jpg");
+
+            }
+             &#urbanlogiq-img {
+                background-image: url("../img/thumbnails/urbanlogiq.jpg");
+
+            }    &#gladis-img {
+                background-image: url("../img/thumbnails/gladis.jpg");
+
+            }
+	 &#sanjose-img {
+                background-image: url("../img/thumbnails/sanjose.jpg");
 
             }
 
@@ -556,7 +587,7 @@ body {
         background-repeat: no-repeat;
         flex: 1 1 100%;
         -webkit-flex: 1 1 100%;
-        height: 450px;
+        height: 475px;
 
         @include break(mobile) {
             height: 250px;
@@ -570,8 +601,11 @@ body {
         -webkit-flex: 0 0 50%;
         width: 50%;
 
-
-
+        &.comingsoon {
+        .project-img, #tags, h2, h3{
+            opacity:45%;
+        }
+    }
         @include break(mobile) {
             flex: 1 1 100%;
             -webkit-flex: 1 1 100%;
@@ -693,6 +727,15 @@ body {
         &#sjma {
             border: 1px solid $black;
             background-image: url("../img/projects/sjma/sjma.jpg")
+        }    
+        
+        &#skillsreading {
+            border: 1px solid $black;
+            background-image: url("../img/projects/skillsreading/skillsreading1.jpg")
+        }   
+        &#urbanlogiq{
+            border: 1px solid $black;
+            background-image: url("../img/projects/urbanlogiq/urbanlogiq.jpg")
         }
 
         &#japanesehall {
@@ -760,6 +803,12 @@ body {
     //            text-decoration: underline;
     //        }
     //    }
+    
+          .break {
+            border-top: 1px solid $black;
+            margin-top: 15px;
+            margin-bottom: 60px;
+        }
     .third-col {
         flex: 0 0 34%;
         -webkit-flex: 0 0 34%;
@@ -851,7 +900,7 @@ body {
         -webkit-flex: 0 0 33%;
 
         width: 33%;
-        padding: 1%;
+        padding-right: 2%;
         @include break(mobile) {
             flex: 0 0 100%;
             -webkit-flex: 0 0 100%;
@@ -861,8 +910,8 @@ body {
     }
 
     .heading {
-        margin-top: 150px;
-        margin-bottom: 20px;
+        margin-top: 100px;
+        margin-bottom: 0px;
         width: 100%;
 
         p {
@@ -918,8 +967,8 @@ body {
     #notification {
 
         margin-top: 150px; //nav is 40px, 110
-        margin-bottom: 65px;
-        width: 450px; //        position: fixed;
+        margin-bottom: 45px;
+        width: 60%; //        position: fixed;
         @include break (tablet) {
             width: 95%;
         }
